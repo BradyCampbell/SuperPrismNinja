@@ -23,6 +23,7 @@ public class PlayerHitAndDodge : MonoBehaviour {
             if (coll.gameObject.tag == "Enemy")
             {
                 Destroy(coll.gameObject);
+				SoundManagement.instance.sfxSource.Play ();
                 health--;
                 if (health <= 0)
                 {
