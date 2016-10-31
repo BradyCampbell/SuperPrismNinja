@@ -45,9 +45,9 @@ public class Create : MonoBehaviour {
 		if (Time.time > distanceBetween) {
 
 			int gameobj = Random.Range (0, 5);
+			distanceBetween = Time.time + timeBetween + timeincrease + gameobj;
 			if(gameobj == 0){
 				
-				distanceBetween = Time.time + timeBetween + timeincrease;
 
 				zPosition = generationPoint.transform.position.z + Random.Range (0, 5);
 
@@ -57,7 +57,6 @@ public class Create : MonoBehaviour {
 			}
 			if(gameobj == 1){
 
-				distanceBetween = Time.time + timeBetween + timeincrease;
 
 				zPosition = generationPoint.transform.position.z + Random.Range (0, 5);
 
@@ -67,7 +66,6 @@ public class Create : MonoBehaviour {
 			}
 			if(gameobj == 2){
 
-				distanceBetween = Time.time + timeBetween + timeincrease;
 
 				zPosition = generationPoint.transform.position.z + Random.Range (0, 5);
 
@@ -77,7 +75,6 @@ public class Create : MonoBehaviour {
 			}
 			if(gameobj == 3){
 
-				distanceBetween = Time.time + timeBetween + timeincrease;
 
 				zPosition = generationPoint.transform.position.z + Random.Range (0, 5);
 
@@ -87,7 +84,6 @@ public class Create : MonoBehaviour {
 			}
 			if(gameobj == 4){
 
-				distanceBetween = Time.time + timeBetween + timeincrease;
 
 				zPosition = generationPoint.transform.position.z + Random.Range (0, 5);
 
@@ -97,7 +93,6 @@ public class Create : MonoBehaviour {
 			}
 			if(gameobj == 5){
 
-				distanceBetween = Time.time + timeBetween + timeincrease;
 
 				zPosition = generationPoint.transform.position.z + Random.Range (0, 5);
 
