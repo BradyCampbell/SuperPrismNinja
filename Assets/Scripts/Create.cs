@@ -36,6 +36,8 @@ public class Create : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+
+
 		if (Time.time == speedUpTime) {
 			timeincrease += 0.2F;
 			speedUpTime += Time.time;
@@ -45,7 +47,11 @@ public class Create : MonoBehaviour {
 		if (Time.time > distanceBetween) {
 
 			int gameobj = Random.Range (0, 5);
-			distanceBetween = Time.time + timeBetween + timeincrease + gameobj;
+			float tmp = Time.time + timeBetween + timeincrease + gameobj;
+			if (tmp > Time.time) {
+				distanceBetween = tmp;
+			}
+
 			if(gameobj == 0){
 				
 
