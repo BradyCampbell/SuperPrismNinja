@@ -6,6 +6,7 @@ public class PlayerHitAndDodge : MonoBehaviour {
     public SpriteRenderer spriteRenderer;
 	public int health;
     private bool dodging = false;
+	private int dodgePowCount = 0;
     public float dodgeTime = 1;
     private bool dodgeCooldown = false;
     public float coolTime = 2;
@@ -20,6 +21,9 @@ public class PlayerHitAndDodge : MonoBehaviour {
 	{
         if (!dodging)
         {
+			if (coll.gameObject.tag == "DodgePow") {
+				dodgePowCount++;
+			}
             if (coll.gameObject.tag == "Enemy")
             {
                 Destroy(coll.gameObject);
@@ -41,8 +45,13 @@ public class PlayerHitAndDodge : MonoBehaviour {
             {
                 dodging = true;
                 spriteRenderer.enabled = false;
-                dodgeCooldown = true;
-                Invoke("resetDodge", dodgeTime);
+				if (dodgePowCount == 0) {
+					dodgeCooldown = true;
+				} 
+				else {
+					dodgePowCount--;
+				}
+				Invoke ("resetDodge", dodgeTime);
             }
         }
     }
@@ -51,7 +60,9 @@ public class PlayerHitAndDodge : MonoBehaviour {
     {
 		dodging = false;
         spriteRenderer.enabled = true;
-        Invoke("resetCooldown", coolTime);
+		if (dodgeCooldown == true) {
+			Invoke ("resetCooldown", coolTime);
+		}
     }
 
     void resetCooldown()
