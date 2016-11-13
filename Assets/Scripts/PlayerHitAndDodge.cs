@@ -5,11 +5,14 @@ public class PlayerHitAndDodge : MonoBehaviour {
 
     public SpriteRenderer spriteRenderer;
 	public int health;
+	private int flickCount = 3;
+	private float flickTime = 0.1f;
     private bool dodging = false;
 	private int dodgePowCount = 0;
     public float dodgeTime = 1;
     private bool dodgeCooldown = false;
     public float coolTime = 2;
+	private GameObject deathAnim;
 
     void Start()
     {
@@ -29,12 +32,47 @@ public class PlayerHitAndDodge : MonoBehaviour {
                 Destroy(coll.gameObject);
 				SoundManagement.instance.sfxSource.Play ();
                 health--;
+				if (health > 0) {
+					flicker ();
+				}
                 if (health <= 0)
                 {
-                    Destroy(gameObject);
+					if (gameObject.tag == "PlayerShadow") {
+						deathAnim = GameObject.Find ("ninjaShadowDeathEffect");
+					} 
+					else {
+						deathAnim = GameObject.Find ("ninjaDeathEffect");
+					}
+					spriteRenderer.enabled = false;
+					Instantiate (deathAnim);
+					Invoke("endGame", 1);
+					//Application.LoadLevel ("End");
                 }
             }
         }
+	}
+
+	void endGame()
+	{
+		Application.LoadLevel("End");
+	}
+
+	void flicker()
+	{
+		if (flickCount > 0) {
+			spriteRenderer.enabled = false;
+			flickCount--;
+			Invoke ("flickerFinish", flickTime);
+		} 
+		else {
+			flickCount = 3;
+		}
+	}
+
+	void flickerFinish()
+	{
+		spriteRenderer.enabled = true;
+		Invoke("flicker", flickTime);
 	}
 
     void Update()
