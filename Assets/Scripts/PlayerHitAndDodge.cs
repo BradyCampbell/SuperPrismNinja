@@ -4,6 +4,7 @@ using System.Collections;
 public class PlayerHitAndDodge : MonoBehaviour {
 
     public SpriteRenderer spriteRenderer;
+	private Animator animator;
 	public int health;
 	private int flickCount = 3;
 	private float flickTime = 0.1f;
@@ -23,6 +24,7 @@ public class PlayerHitAndDodge : MonoBehaviour {
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.enabled = true;
+		animator = GetComponent<Animator> ();
 		num_c1 = Scoring.num_c1;
 		num_c2 = Scoring.num_c2;
 		num_c3 = Scoring.num_c3;
@@ -36,6 +38,7 @@ public class PlayerHitAndDodge : MonoBehaviour {
 				dodgePowCount++;
 			}
 			if (coll.gameObject.tag == "InvinciblePow") {
+				Destroy (coll.gameObject);
 				isInvincible();
 			}
 			if (coll.gameObject.tag == "Enemy" && invincible== false)
@@ -57,19 +60,21 @@ public class PlayerHitAndDodge : MonoBehaviour {
 					spriteRenderer.enabled = false;
 					Instantiate (deathAnim);
 					Invoke("endGame", 1);
-					//Application.LoadLevel ("End");
                 }
             }
 			if (coll.gameObject.tag == "Collectible1") 
 			{
+				Destroy (coll.gameObject);
 				num_c1++;
 			}
 			if (coll.gameObject.tag == "Collectible2") 
 			{
+				Destroy (coll.gameObject);
 				num_c2++;
 			}
 			if (coll.gameObject.tag == "Collectible3") 
 			{
+				Destroy (coll.gameObject);
 				num_c3++;
 			}
         }
@@ -139,6 +144,7 @@ public class PlayerHitAndDodge : MonoBehaviour {
 	void isInvincible()
 	{
 		invincible = true;
+		animator.SetBool ("invincibility", true);
 		Invoke("resetInvincible", invincibleTime);
 		//Change the character on some visual level i.e. rainbow glow?
 	}
@@ -146,5 +152,6 @@ public class PlayerHitAndDodge : MonoBehaviour {
 	void resetInvincible()
 	{
 		invincible = false;
+		animator.SetBool("invincibility", false);
 	}
 }
