@@ -13,21 +13,32 @@ public class PlayerHitAndDodge : MonoBehaviour {
     private bool dodgeCooldown = false;
     public float coolTime = 2;
 	private GameObject deathAnim;
+	private bool invincible = false;
+	public float invincibleTime = 6;
+	public int num_c1;
+	public int num_c2;
+	public int num_c3;
 
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.enabled = true;
+		num_c1 = Scoring.num_c1;
+		num_c2 = Scoring.num_c2;
+		num_c3 = Scoring.num_c3;
     }
 
 	void OnCollisionEnter2D(Collision2D coll)
 	{
-        if (!dodging)
+		if (!dodging && !invincible)
         {
 			if (coll.gameObject.tag == "DodgePow") {
 				dodgePowCount++;
 			}
-            if (coll.gameObject.tag == "Enemy")
+			if (coll.gameObject.tag == "InvinciblePow") {
+				isInvincible();
+			}
+			if (coll.gameObject.tag == "Enemy" && invincible== false)
             {
                 Destroy(coll.gameObject);
 				SoundManagement.instance.sfxSource.Play ();
@@ -49,7 +60,24 @@ public class PlayerHitAndDodge : MonoBehaviour {
 					//Application.LoadLevel ("End");
                 }
             }
+			if (coll.gameObject.tag == "Collectible1") 
+			{
+				num_c1++;
+			}
+			if (coll.gameObject.tag == "Collectible2") 
+			{
+				num_c2++;
+			}
+			if (coll.gameObject.tag == "Collectible3") 
+			{
+				num_c3++;
+			}
         }
+		else if (coll.gameObject.tag == "Enemy" && invincible == true) 
+		{
+			Destroy(coll.gameObject);
+			//Maybe seperate sound?
+		}
 	}
 
 	void endGame()
@@ -107,4 +135,16 @@ public class PlayerHitAndDodge : MonoBehaviour {
     {
         dodgeCooldown = false;
     }
+
+	void isInvincible()
+	{
+		invincible = true;
+		Invoke("resetInvincible", invincibleTime);
+		//Change the character on some visual level i.e. rainbow glow?
+	}
+
+	void resetInvincible()
+	{
+		invincible = false;
+	}
 }
