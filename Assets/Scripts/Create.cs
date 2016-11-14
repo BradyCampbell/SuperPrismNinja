@@ -9,6 +9,7 @@ public class Create : MonoBehaviour {
 	public GameObject obj3;
 	public GameObject obj4;
 	public GameObject obj5;
+	public GameObject spaceShip;
 	public Transform generationPoint;
 
 	private float xPosition;
@@ -18,6 +19,7 @@ public class Create : MonoBehaviour {
 	public float timeBetween;
 	private float timeincrease;
 	public float speedUpTime;
+	public float spaceShipTime;
 
 
 	public int movespeed = 1;
@@ -47,6 +49,11 @@ public class Create : MonoBehaviour {
 		if (Time.time > distanceBetween) {
 
 			int gameobj = Random.Range (0, 5);
+
+
+			if (Time.time >= spaceShipTime) {
+				 gameobj = Random.Range (0, 6);
+			}
 			float tmp = Time.time + timeBetween + timeincrease + gameobj;
 			if (tmp > Time.time) {
 				distanceBetween = tmp;
@@ -106,6 +113,17 @@ public class Create : MonoBehaviour {
 
 				Instantiate (obj5, this.transform.position, this.transform.rotation);
 			}
+
+			if(gameobj == 6){
+
+
+				zPosition = generationPoint.transform.position.z + Random.Range (0, 5);
+
+				this.transform.position = new Vector3 (xPosition, this.transform.position.y, zPosition);
+
+				Instantiate (spaceShip, this.transform.position, this.transform.rotation);
+			}
+
 
 		}
 
