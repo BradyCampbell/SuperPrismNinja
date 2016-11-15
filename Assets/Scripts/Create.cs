@@ -51,7 +51,6 @@ public class Create : MonoBehaviour {
 			int gameobj = Random.Range (0, 5);
 
 
-
 			if (Time.time >= spaceShipTime) {
 				 gameobj = Random.Range (0, 6);
 			}
