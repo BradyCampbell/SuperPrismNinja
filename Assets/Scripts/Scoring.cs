@@ -18,7 +18,7 @@ public class Scoring : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		timeScore = (int)(Time.time- startTime);
-	}
+
 
 	int calculateScore()
 	{
