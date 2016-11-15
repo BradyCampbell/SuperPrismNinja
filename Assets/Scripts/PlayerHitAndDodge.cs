@@ -56,7 +56,7 @@ public class PlayerHitAndDodge : MonoBehaviour {
 					else {
 						deathAnim = GameObject.Find ("ninjaDeathEffect");
 					}
-					spriteRenderer.enabled = false;
+					animator.SetTrigger("dead");
 					Instantiate (deathAnim);
 					Invoke("endGame", 1);
                 }
