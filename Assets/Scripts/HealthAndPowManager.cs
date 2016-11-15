@@ -5,6 +5,7 @@ public class HealthAndPowManager : MonoBehaviour {
 
 	public static HealthAndPowManager instance = null;
 	public int hp = 5;
+	public bool invincible = false;
 
 	private GameObject sprite1;
 	private GameObject sprite2;

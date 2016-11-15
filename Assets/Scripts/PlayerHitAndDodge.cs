@@ -13,7 +13,6 @@ public class PlayerHitAndDodge : MonoBehaviour {
     private bool dodgeCooldown = false;
     public float coolTime = 2;
 	private GameObject deathAnim;
-	private bool invincible = false;
 	public float invincibleTime = 6;
 	public int num_c1;
 	public int num_c2;
@@ -31,7 +30,7 @@ public class PlayerHitAndDodge : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D coll)
 	{
-		if (!dodging && !invincible)
+		if (!dodging && !HealthAndPowManager.instance.invincible)
         {
 			if (coll.gameObject.tag == "DodgePow") {
 				dodgePowCount++;
@@ -40,7 +39,7 @@ public class PlayerHitAndDodge : MonoBehaviour {
 				Destroy (coll.gameObject);
 				isInvincible();
 			}
-			if (coll.gameObject.tag == "Enemy" && invincible== false)
+			if (coll.gameObject.tag == "Enemy" && HealthAndPowManager.instance.invincible== false)
             {
                 Destroy(coll.gameObject);
 				SoundManagement.instance.sfxSource.Play ();
@@ -77,7 +76,7 @@ public class PlayerHitAndDodge : MonoBehaviour {
 				num_c3++;
 			}
         }
-		else if (coll.gameObject.tag == "Enemy" && invincible == true) 
+		else if (coll.gameObject.tag == "Enemy" && HealthAndPowManager.instance.invincible == true) 
 		{
 			Destroy(coll.gameObject);
 			//Maybe seperate sound?
@@ -142,7 +141,7 @@ public class PlayerHitAndDodge : MonoBehaviour {
 
 	void isInvincible()
 	{
-		invincible = true;
+		HealthAndPowManager.instance.invincible = true;
 		animator.SetBool ("invincibility", true);
 		Invoke("resetInvincible", invincibleTime);
 		//Change the character on some visual level i.e. rainbow glow?
@@ -150,7 +149,7 @@ public class PlayerHitAndDodge : MonoBehaviour {
 
 	void resetInvincible()
 	{
-		invincible = false;
+		HealthAndPowManager.instance.invincible = false;
 		animator.SetBool("invincibility", false);
 	}
 }
