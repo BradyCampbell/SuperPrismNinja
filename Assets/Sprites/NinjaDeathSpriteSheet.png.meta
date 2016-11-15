@@ -1,0 +1,103 @@
+fileFormatVersion: 2
+guid: 54526575c9df0694599bf222a167327c
+timeCreated: 1479172025
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: NinjaDeathSpriteSheet_0
+    21300002: NinjaDeathSpriteSheet_1
+    21300004: NinjaDeathSpriteSheet_2
+    21300006: NinjaDeathSpriteSheet_3
+    21300008: NinjaDeathSpriteSheet_4
+    21300010: NinjaDeathSpriteSheet_5
+    21300012: NinjaDeathSpriteSheet_6
+    21300014: NinjaDeathSpriteSheet_7
+    21300016: NinjaDeathSpriteSheet_8
+    21300018: NinjaDeathSpriteSheet_9
+    21300020: NinjaDeathSpriteSheet_10
+    21300022: NinjaDeathSpriteSheet_11
+    21300024: NinjaDeathSpriteSheet_12
+    21300026: NinjaDeathSpriteSheet_13
+    21300028: NinjaDeathSpriteSheet_14
+    21300030: NinjaDeathSpriteSheet_15
+    21300032: NinjaDeathSpriteSheet_16
+    21300034: NinjaDeathSpriteSheet_17
+    21300036: NinjaDeathSpriteSheet_18
+    21300038: NinjaDeathSpriteSheet_19
+    21300040: NinjaDeathSpriteSheet_20
+    21300042: NinjaDeathSpriteSheet_21
+    21300044: NinjaDeathSpriteSheet_22
+    21300046: NinjaDeathSpriteSheet_23
+    21300048: NinjaDeathSpriteSheet_24
+    21300050: NinjaDeathSpriteSheet_25
+    21300052: NinjaDeathSpriteSheet_26
+    21300054: NinjaDeathSpriteSheet_27
+    21300056: NinjaDeathSpriteSheet_28
+    21300058: NinjaDeathSpriteSheet_29
+    21300060: NinjaDeathSpriteSheet_30
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NinjaDeathSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 550
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

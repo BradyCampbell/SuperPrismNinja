@@ -5,7 +5,6 @@ public class PlayerHitAndDodge : MonoBehaviour {
 
     public SpriteRenderer spriteRenderer;
 	private Animator animator;
-	public int health;
 	private int flickCount = 3;
 	private float flickTime = 0.1f;
     private bool dodging = false;
@@ -45,11 +44,11 @@ public class PlayerHitAndDodge : MonoBehaviour {
             {
                 Destroy(coll.gameObject);
 				SoundManagement.instance.sfxSource.Play ();
-                health--;
-				if (health > 0) {
+				HealthAndPowManager.instance.hp--;
+				if (HealthAndPowManager.instance.hp > 0) {
 					flicker ();
 				}
-                if (health <= 0)
+				if (HealthAndPowManager.instance.hp <= 0)
                 {
 					if (gameObject.tag == "PlayerShadow") {
 						deathAnim = GameObject.Find ("ninjaShadowDeathEffect");
