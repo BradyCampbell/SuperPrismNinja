@@ -52,19 +52,19 @@ public class HealthAndPowManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (hp == 4){
+		if (hp <= 4){
 			Destroy (sprite5);
 		}
-		if (hp == 3) {
+		if (hp <= 3) {
 			Destroy (sprite4);
 		}
-		if (hp == 2) {
+		if (hp <= 2) {
 			Destroy (sprite3);
 		}
-		if (hp == 1) {
+		if (hp <= 1) {
 			Destroy (sprite2);
 		}
-		if (hp == 0) {
+		if (hp <= 0) {
 			Destroy (sprite1);
 		}
 	}
