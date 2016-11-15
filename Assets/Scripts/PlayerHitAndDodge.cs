@@ -142,7 +142,7 @@ public class PlayerHitAndDodge : MonoBehaviour {
 	void isInvincible()
 	{
 		HealthAndPowManager.instance.invincible = true;
-		animator.SetBool ("invincibility", true);
+		HealthAndPowManager.instance.invincibleTrigger();
 		Invoke("resetInvincible", invincibleTime);
 		//Change the character on some visual level i.e. rainbow glow?
 	}
@@ -150,6 +150,6 @@ public class PlayerHitAndDodge : MonoBehaviour {
 	void resetInvincible()
 	{
 		HealthAndPowManager.instance.invincible = false;
-		animator.SetBool("invincibility", false);
+		HealthAndPowManager.instance.invincibleEnd ();
 	}
 }

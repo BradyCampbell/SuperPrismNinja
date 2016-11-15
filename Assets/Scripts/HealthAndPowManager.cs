@@ -7,6 +7,11 @@ public class HealthAndPowManager : MonoBehaviour {
 	public int hp = 5;
 	public bool invincible = false;
 
+	private GameObject player;
+	private Animator playerAnimator;
+	private GameObject playerShadow;
+	private Animator playerShadowAnimator;
+
 	private GameObject sprite1;
 	private GameObject sprite2;
 	private GameObject sprite3;
@@ -26,6 +31,23 @@ public class HealthAndPowManager : MonoBehaviour {
 		sprite3 = GameObject.Find("nin (2)");
 		sprite4 = GameObject.Find("nin (3)");
 		sprite5 = GameObject.Find("nin (4)");
+
+		player = GameObject.Find ("Player");
+		playerAnimator = player.GetComponent<Animator>();
+		playerShadow = GameObject.Find ("Player Shadow");
+		playerShadowAnimator = playerShadow.GetComponent<Animator>();
+	}
+
+	public void invincibleTrigger()
+	{
+		playerAnimator.SetBool ("invincibility", true);
+		playerShadowAnimator.SetBool ("invincibility", true);
+	}
+
+	public void invincibleEnd()
+	{
+		playerAnimator.SetBool("invincibility", false);
+		playerShadowAnimator.SetBool("invincibility", false);
 	}
 	
 	// Update is called once per frame
