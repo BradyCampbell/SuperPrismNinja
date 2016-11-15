@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: f8e884a2576444835bcbb55846cc29c0
-timeCreated: 1478564973
+timeCreated: 1479174605
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -8,6 +8,26 @@ TextureImporter:
     21300002: gemSpriteSheet_1
     21300004: gemSpriteSheet_2
     21300006: gemSpriteSheet_3
+    21300008: gemSpriteSheet_4
+    21300010: gemSpriteSheet_5
+    21300012: gemSpriteSheet_6
+    21300014: gemSpriteSheet_7
+    21300016: gemSpriteSheet_8
+    21300018: gemSpriteSheet_9
+    21300020: gemSpriteSheet_10
+    21300022: gemSpriteSheet_11
+    21300024: gemSpriteSheet_12
+    21300026: gemSpriteSheet_13
+    21300028: gemSpriteSheet_14
+    21300030: gemSpriteSheet_15
+    21300032: gemSpriteSheet_16
+    21300034: gemSpriteSheet_17
+    21300036: gemSpriteSheet_18
+    21300038: gemSpriteSheet_19
+    21300040: gemSpriteSheet_20
+    21300042: gemSpriteSheet_21
+    21300044: gemSpriteSheet_22
+    21300046: gemSpriteSheet_23
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -60,8 +80,8 @@ TextureImporter:
       name: gemSpriteSheet_0
       rect:
         serializedVersion: 2
-        x: 126
-        y: 467
+        x: 87
+        y: 1304
         width: 185
         height: 135
       alignment: 0
@@ -73,8 +93,8 @@ TextureImporter:
       name: gemSpriteSheet_1
       rect:
         serializedVersion: 2
-        x: 450
-        y: 467
+        x: 395
+        y: 1304
         width: 185
         height: 135
       alignment: 0
@@ -86,8 +106,8 @@ TextureImporter:
       name: gemSpriteSheet_2
       rect:
         serializedVersion: 2
-        x: 126
-        y: 194
+        x: 680
+        y: 1304
         width: 185
         height: 135
       alignment: 0
@@ -99,8 +119,268 @@ TextureImporter:
       name: gemSpriteSheet_3
       rect:
         serializedVersion: 2
-        x: 450
-        y: 194
+        x: 955
+        y: 1304
+        width: 185
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gemSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 1016
+        width: 185
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gemSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 1016
+        width: 185
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gemSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 1016
+        width: 185
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gemSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 1016
+        width: 185
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gemSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 760
+        width: 185
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gemSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 760
+        width: 185
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gemSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 760
+        width: 185
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gemSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 760
+        width: 185
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gemSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 528
+        width: 185
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gemSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 528
+        width: 185
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gemSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 528
+        width: 185
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gemSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 528
+        width: 185
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gemSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 298
+        width: 185
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gemSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 298
+        width: 185
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gemSpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 298
+        width: 185
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gemSpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 298
+        width: 185
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gemSpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 50
+        width: 185
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gemSpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 50
+        width: 185
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gemSpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 50
+        width: 185
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gemSpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 50
         width: 185
         height: 135
       alignment: 0

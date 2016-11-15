@@ -1,9 +1,24 @@
 fileFormatVersion: 2
-guid: 5058afaff01c18d4c8e4f4565085fa78
-timeCreated: 1479173053
+guid: 5bd57ed45765f4598ac5f77ff19875ba
+timeCreated: 1479175126
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: NinjaDeathSpriteSheet_0
+    21300002: NinjaDeathSpriteSheet_1
+    21300004: NinjaDeathSpriteSheet_2
+    21300006: NinjaDeathSpriteSheet_3
+    21300008: NinjaDeathSpriteSheet_4
+    21300010: NinjaDeathSpriteSheet_5
+    21300012: NinjaDeathSpriteSheet_6
+    21300014: NinjaDeathSpriteSheet_7
+    21300016: NinjaDeathSpriteSheet_8
+    21300018: NinjaDeathSpriteSheet_9
+    21300020: NinjaDeathSpriteSheet_10
+    21300022: NinjaDeathSpriteSheet_11
+    21300024: NinjaDeathSpriteSheet_12
+    21300026: NinjaDeathSpriteSheet_13
+    21300028: NinjaDeathSpriteSheet_14
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,7 +45,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,7 +53,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -51,7 +66,202 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: NinjaDeathSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 468
+        width: 75
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NinjaDeathSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 466
+        width: 79
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NinjaDeathSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 460
+        width: 89
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NinjaDeathSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 448
+        width: 110
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NinjaDeathSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 444
+        width: 119
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NinjaDeathSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 344
+        width: 110
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NinjaDeathSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 351
+        width: 118
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NinjaDeathSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 353
+        width: 119
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NinjaDeathSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 353
+        width: 115
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NinjaDeathSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 0
+        width: 110
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NinjaDeathSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 263
+        width: 114
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NinjaDeathSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 265
+        width: 117
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NinjaDeathSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 265
+        width: 117
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NinjaDeathSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 266
+        width: 118
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NinjaDeathSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 85
+        width: 110
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
     outline: []
   spritePackingTag: 
   userData: 
