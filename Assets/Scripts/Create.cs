@@ -20,6 +20,7 @@ public class Create : MonoBehaviour {
 	private float timeincrease;
 	public float speedUpTime;
 	public float spaceShipTime;
+	private int spaceShipSpawn;
 
 
 	public int movespeed = 1;
@@ -31,7 +32,7 @@ public class Create : MonoBehaviour {
 	void Start () {
 		xPosition = generationPoint.transform.position.x;
 		 timeincrease = 0;
-
+		spaceShipSpawn = 0;
 
 	
 	}
@@ -39,24 +40,29 @@ public class Create : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		spaceShipSpawn++;
 
-		if (Time.time == speedUpTime) {
-			timeincrease += 0.2F;
+		if (Time.time >= speedUpTime) {
+			timeincrease += 1;
 			speedUpTime += Time.time;
 		}
 
 
 		if (Time.time > distanceBetween) {
 
-			int gameobj = Random.Range (0, 5);
+			int gameobj = Random.Range (0, 7);
 
 
-			if (Time.time >= spaceShipTime) {
+			if (spaceShipSpawn <= spaceShipTime) {
 				 gameobj = Random.Range (0, 6);
 			}
+
 			float tmp = Time.time + timeBetween + timeincrease + gameobj;
+
 			if (tmp > Time.time) {
 				distanceBetween = tmp;
+			} else {
+				distanceBetween = Time.time;
 			}
 
 			if(gameobj == 0){
@@ -126,8 +132,7 @@ public class Create : MonoBehaviour {
 
 
 		}
-
-
+			
 
 	}
 }
