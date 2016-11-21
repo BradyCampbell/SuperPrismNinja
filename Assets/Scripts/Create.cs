@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Create : MonoBehaviour {
+public class Create : MonoBehaviour
+{
 
 	public GameObject obj;
 	public GameObject obj1;
@@ -15,12 +16,14 @@ public class Create : MonoBehaviour {
 	private float xPosition;
 	private float zPosition;
 
-	private float distanceBetween;
-	public float timeBetween;
-	private float timeincrease;
-	public float speedUpTime;
 	public float spaceShipTime;
 	private int spaceShipSpawn;
+
+
+
+	float createRate = 1.5f, createRateTimer;
+	float rateIncrease = 0.1f, initialCreateDelay = 3.0f;
+	int callCounter = 0, callsBeforeRateIncrease = 10;
 
 
 	public int movespeed = 1;
@@ -29,110 +32,108 @@ public class Create : MonoBehaviour {
 
 
 	// Use this for initializations
-	void Start () {
+	void Start ()
+	{
 		xPosition = generationPoint.transform.position.x;
-		 timeincrease = 0;
 		spaceShipSpawn = 0;
+
+		createRateTimer = createRate + initialCreateDelay;
 
 	
 	}
 
-	// Update is called once per frame
-	void Update () {
 
-		spaceShipSpawn++;
-
-		if (Time.time >= speedUpTime) {
-			timeincrease += 1;
-			speedUpTime += Time.time;
+	void Update ()
+	{
+		createRateTimer -= Time.deltaTime;
+		if (createRateTimer <= 0) {
+			CustomInvoke ();
 		}
+	}
 
+	void CustomInvoke ()
+	{
 
-		if (Time.time > distanceBetween) {
+		int randNum = Random.Range (0, 7);
+		
+		if (spaceShipSpawn <= spaceShipTime) {
+			randNum = Random.Range (0, 6);
+		}
+		
+		spawn (randNum);
+		callCounter++;
+		if (callCounter >= callsBeforeRateIncrease) {
+			createRate -= rateIncrease;
+			callCounter = 0;
+		}
+		createRateTimer = createRate + randNum;
+	}
 
-			int gameobj = Random.Range (0, 7);
-
-
-			if (spaceShipSpawn <= spaceShipTime) {
-				 gameobj = Random.Range (0, 6);
-			}
-
-			float tmp = Time.time + timeBetween + timeincrease + gameobj;
-
-			if (tmp > Time.time) {
-				distanceBetween = tmp;
-			} else {
-				distanceBetween = Time.time;
-			}
-
-			if(gameobj == 0){
-				
-
-				zPosition = generationPoint.transform.position.z + Random.Range (0, 5);
-
-				this.transform.position = new Vector3 (xPosition, this.transform.position.y, zPosition);
-
-				Instantiate (obj, this.transform.position, this.transform.rotation);
-			}
-			if(gameobj == 1){
-
-
-				zPosition = generationPoint.transform.position.z + Random.Range (0, 5);
-
-				this.transform.position = new Vector3 (xPosition, this.transform.position.y, zPosition);
-
-				Instantiate (obj1, this.transform.position, this.transform.rotation);
-			}
-			if(gameobj == 2){
-
-
-				zPosition = generationPoint.transform.position.z + Random.Range (0, 5);
-
-				this.transform.position = new Vector3 (xPosition, this.transform.position.y, zPosition);
-
-				Instantiate (obj2, this.transform.position, this.transform.rotation);
-			}
-			if(gameobj == 3){
-
-
-				zPosition = generationPoint.transform.position.z + Random.Range (0, 5);
-
-				this.transform.position = new Vector3 (xPosition, this.transform.position.y, zPosition);
-
-				Instantiate (obj3, this.transform.position, this.transform.rotation);
-			}
-			if(gameobj == 4){
-
-
-				zPosition = generationPoint.transform.position.z + Random.Range (0, 5);
-
-				this.transform.position = new Vector3 (xPosition, this.transform.position.y, zPosition);
-
-				Instantiate (obj4, this.transform.position, this.transform.rotation);
-			}
-			if(gameobj == 5){
-
-
-				zPosition = generationPoint.transform.position.z + Random.Range (0, 5);
-
-				this.transform.position = new Vector3 (xPosition, this.transform.position.y, zPosition);
-
-				Instantiate (obj5, this.transform.position, this.transform.rotation);
-			}
-
-			if(gameobj == 6){
-
-
-				zPosition = generationPoint.transform.position.z + Random.Range (0, 5);
-
-				this.transform.position = new Vector3 (xPosition, this.transform.position.y, zPosition);
-
-				Instantiate (spaceShip, this.transform.position, this.transform.rotation);
-			}
-
-
+	void spawn (int num)
+	{
+		if (num == 0) {
+							
+			
+			zPosition = generationPoint.transform.position.z + Random.Range (0, 5);
+			
+			this.transform.position = new Vector3 (xPosition, this.transform.position.y, zPosition);
+			
+			Instantiate (obj, this.transform.position, this.transform.rotation);
+		}
+		if (num == 1) {
+			
+			
+			zPosition = generationPoint.transform.position.z + Random.Range (0, 5);
+			
+			this.transform.position = new Vector3 (xPosition, this.transform.position.y, zPosition);
+			
+			Instantiate (obj1, this.transform.position, this.transform.rotation);
+		}
+		if (num == 2) {
+			
+			
+			zPosition = generationPoint.transform.position.z + Random.Range (0, 5);
+			
+			this.transform.position = new Vector3 (xPosition, this.transform.position.y, zPosition);
+			
+			Instantiate (obj2, this.transform.position, this.transform.rotation);
+		}
+		if (num == 3) {
+			
+			
+			zPosition = generationPoint.transform.position.z + Random.Range (0, 5);
+			
+			this.transform.position = new Vector3 (xPosition, this.transform.position.y, zPosition);
+			
+			Instantiate (obj3, this.transform.position, this.transform.rotation);
+		}
+		if (num == 4) {
+			
+			
+			zPosition = generationPoint.transform.position.z + Random.Range (0, 5);
+			
+			this.transform.position = new Vector3 (xPosition, this.transform.position.y, zPosition);
+			
+			Instantiate (obj4, this.transform.position, this.transform.rotation);
+		}
+		if (num == 5) {
+			
+			
+			zPosition = generationPoint.transform.position.z + Random.Range (0, 5);
+			
+			this.transform.position = new Vector3 (xPosition, this.transform.position.y, zPosition);
+			
+			Instantiate (obj5, this.transform.position, this.transform.rotation);
 		}
 			
-
+		if (num == 6) {
+			
+			
+			zPosition = generationPoint.transform.position.z + Random.Range (0, 5);
+			
+			this.transform.position = new Vector3 (xPosition, this.transform.position.y, zPosition);
+			
+			Instantiate (spaceShip, this.transform.position, this.transform.rotation);
+		}
 	}
 }
