@@ -6,8 +6,8 @@ public class objMoving : MonoBehaviour {
 	public float movespeed = 1;
 	public Vector3 userDirection = Vector3.left;
 
-	public float acceleration=1.0f;
-	public float maxSpeed=60.0f;
+	public float acceleration=1;
+	public float maxSpeed=60;
 
 	// Use this for initialization
 	void Start () {

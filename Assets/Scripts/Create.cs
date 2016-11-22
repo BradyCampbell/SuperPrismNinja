@@ -53,6 +53,7 @@ public class Create : MonoBehaviour
 
 	void CustomInvoke ()
 	{
+		spaceShipSpawn++;
 
 		int randNum = Random.Range (0, 7);
 		
@@ -61,12 +62,13 @@ public class Create : MonoBehaviour
 		}
 		
 		spawn (randNum);
+
 		callCounter++;
 		if (callCounter >= callsBeforeRateIncrease) {
 			createRate -= rateIncrease;
 			callCounter = 0;
 		}
-		createRateTimer = createRate + randNum;
+		createRateTimer = createRate + Random.Range(0,4) + Time.deltaTime;
 	}
 
 	void spawn (int num)
