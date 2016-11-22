@@ -1,0 +1,227 @@
+fileFormatVersion: 2
+guid: d0f6ee8d9970c4138bfae0eb23c5d885
+timeCreated: 1479172510
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: powerUpSpriteSheet_0
+    21300002: powerUpSpriteSheet_1
+    21300004: powerUpSpriteSheet_2
+    21300006: powerUpSpriteSheet_3
+    21300008: powerUpSpriteSheet_4
+    21300010: powerUpSpriteSheet_5
+    21300012: powerUpSpriteSheet_6
+    21300014: powerUpSpriteSheet_7
+    21300016: powerUpSpriteSheet_8
+    21300018: powerUpSpriteSheet_9
+    21300020: powerUpSpriteSheet_10
+    21300022: powerUpSpriteSheet_11
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: powerUpSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 527
+        width: 96
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: powerUpSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 531
+        width: 96
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: powerUpSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 524
+        width: 96
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: powerUpSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 360
+        width: 96
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: powerUpSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 364
+        width: 96
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: powerUpSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 357
+        width: 96
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: powerUpSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 193
+        width: 96
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: powerUpSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 197
+        width: 96
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: powerUpSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 190
+        width: 96
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: powerUpSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 26
+        width: 96
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: powerUpSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 30
+        width: 96
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: powerUpSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 23
+        width: 96
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

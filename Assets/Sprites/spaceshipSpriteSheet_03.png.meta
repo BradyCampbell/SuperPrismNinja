@@ -1,0 +1,2327 @@
+fileFormatVersion: 2
+guid: 0d137ccc201db47b5bd0a7ce5498d154
+timeCreated: 1479780006
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: spaceshipSpriteSheet_03_0
+    21300002: spaceshipSpriteSheet_03_1
+    21300004: spaceshipSpriteSheet_03_2
+    21300006: spaceshipSpriteSheet_03_3
+    21300008: spaceshipSpriteSheet_03_4
+    21300010: spaceshipSpriteSheet_03_5
+    21300012: spaceshipSpriteSheet_03_6
+    21300014: spaceshipSpriteSheet_03_7
+    21300016: spaceshipSpriteSheet_03_8
+    21300018: spaceshipSpriteSheet_03_9
+    21300020: spaceshipSpriteSheet_03_10
+    21300022: spaceshipSpriteSheet_03_11
+    21300024: spaceshipSpriteSheet_03_12
+    21300026: spaceshipSpriteSheet_03_13
+    21300028: spaceshipSpriteSheet_03_14
+    21300030: spaceshipSpriteSheet_03_15
+    21300032: spaceshipSpriteSheet_03_16
+    21300034: spaceshipSpriteSheet_03_17
+    21300036: spaceshipSpriteSheet_03_18
+    21300038: spaceshipSpriteSheet_03_19
+    21300040: spaceshipSpriteSheet_03_20
+    21300042: spaceshipSpriteSheet_03_21
+    21300044: spaceshipSpriteSheet_03_22
+    21300046: spaceshipSpriteSheet_03_23
+    21300048: spaceshipSpriteSheet_03_24
+    21300050: spaceshipSpriteSheet_03_25
+    21300052: spaceshipSpriteSheet_03_26
+    21300054: spaceshipSpriteSheet_03_27
+    21300056: spaceshipSpriteSheet_03_28
+    21300058: spaceshipSpriteSheet_03_29
+    21300060: spaceshipSpriteSheet_03_30
+    21300062: spaceshipSpriteSheet_03_31
+    21300064: spaceshipSpriteSheet_03_32
+    21300066: spaceshipSpriteSheet_03_33
+    21300068: spaceshipSpriteSheet_03_34
+    21300070: spaceshipSpriteSheet_03_35
+    21300072: spaceshipSpriteSheet_03_36
+    21300074: spaceshipSpriteSheet_03_37
+    21300076: spaceshipSpriteSheet_03_38
+    21300078: spaceshipSpriteSheet_03_39
+    21300080: spaceshipSpriteSheet_03_40
+    21300082: spaceshipSpriteSheet_03_41
+    21300084: spaceshipSpriteSheet_03_42
+    21300086: spaceshipSpriteSheet_03_43
+    21300088: spaceshipSpriteSheet_03_44
+    21300090: spaceshipSpriteSheet_03_45
+    21300092: spaceshipSpriteSheet_03_46
+    21300094: spaceshipSpriteSheet_03_47
+    21300096: spaceshipSpriteSheet_03_48
+    21300098: spaceshipSpriteSheet_03_49
+    21300100: spaceshipSpriteSheet_03_50
+    21300102: spaceshipSpriteSheet_03_51
+    21300104: spaceshipSpriteSheet_03_52
+    21300106: spaceshipSpriteSheet_03_53
+    21300108: spaceshipSpriteSheet_03_54
+    21300110: spaceshipSpriteSheet_03_55
+    21300112: spaceshipSpriteSheet_03_56
+    21300114: spaceshipSpriteSheet_03_57
+    21300116: spaceshipSpriteSheet_03_58
+    21300118: spaceshipSpriteSheet_03_59
+    21300120: spaceshipSpriteSheet_03_60
+    21300122: spaceshipSpriteSheet_03_61
+    21300124: spaceshipSpriteSheet_03_62
+    21300126: spaceshipSpriteSheet_03_63
+    21300128: spaceshipSpriteSheet_03_64
+    21300130: spaceshipSpriteSheet_03_65
+    21300132: spaceshipSpriteSheet_03_66
+    21300134: spaceshipSpriteSheet_03_67
+    21300136: spaceshipSpriteSheet_03_68
+    21300138: spaceshipSpriteSheet_03_69
+    21300140: spaceshipSpriteSheet_03_70
+    21300142: spaceshipSpriteSheet_03_71
+    21300144: spaceshipSpriteSheet_03_72
+    21300146: spaceshipSpriteSheet_03_73
+    21300148: spaceshipSpriteSheet_03_74
+    21300150: spaceshipSpriteSheet_03_75
+    21300152: spaceshipSpriteSheet_03_76
+    21300154: spaceshipSpriteSheet_03_77
+    21300156: spaceshipSpriteSheet_03_78
+    21300158: spaceshipSpriteSheet_03_79
+    21300160: spaceshipSpriteSheet_03_80
+    21300162: spaceshipSpriteSheet_03_81
+    21300164: spaceshipSpriteSheet_03_82
+    21300166: spaceshipSpriteSheet_03_83
+    21300168: spaceshipSpriteSheet_03_84
+    21300170: spaceshipSpriteSheet_03_85
+    21300172: spaceshipSpriteSheet_03_86
+    21300174: spaceshipSpriteSheet_03_87
+    21300176: spaceshipSpriteSheet_03_88
+    21300178: spaceshipSpriteSheet_03_89
+    21300180: spaceshipSpriteSheet_03_90
+    21300182: spaceshipSpriteSheet_03_91
+    21300184: spaceshipSpriteSheet_03_92
+    21300186: spaceshipSpriteSheet_03_93
+    21300188: spaceshipSpriteSheet_03_94
+    21300190: spaceshipSpriteSheet_03_95
+    21300192: spaceshipSpriteSheet_03_96
+    21300194: spaceshipSpriteSheet_03_97
+    21300196: spaceshipSpriteSheet_03_98
+    21300198: spaceshipSpriteSheet_03_99
+    21300200: spaceshipSpriteSheet_03_100
+    21300202: spaceshipSpriteSheet_03_101
+    21300204: spaceshipSpriteSheet_03_102
+    21300206: spaceshipSpriteSheet_03_103
+    21300208: spaceshipSpriteSheet_03_104
+    21300210: spaceshipSpriteSheet_03_105
+    21300212: spaceshipSpriteSheet_03_106
+    21300214: spaceshipSpriteSheet_03_107
+    21300216: spaceshipSpriteSheet_03_108
+    21300218: spaceshipSpriteSheet_03_109
+    21300220: spaceshipSpriteSheet_03_110
+    21300222: spaceshipSpriteSheet_03_111
+    21300224: spaceshipSpriteSheet_03_112
+    21300226: spaceshipSpriteSheet_03_113
+    21300228: spaceshipSpriteSheet_03_114
+    21300230: spaceshipSpriteSheet_03_115
+    21300232: spaceshipSpriteSheet_03_116
+    21300234: spaceshipSpriteSheet_03_117
+    21300236: spaceshipSpriteSheet_03_118
+    21300238: spaceshipSpriteSheet_03_119
+    21300240: spaceshipSpriteSheet_03_120
+    21300242: spaceshipSpriteSheet_03_121
+    21300244: spaceshipSpriteSheet_03_122
+    21300246: spaceshipSpriteSheet_03_123
+    21300248: spaceshipSpriteSheet_03_124
+    21300250: spaceshipSpriteSheet_03_125
+    21300252: spaceshipSpriteSheet_03_126
+    21300254: spaceshipSpriteSheet_03_127
+    21300256: spaceshipSpriteSheet_03_128
+    21300258: spaceshipSpriteSheet_03_129
+    21300260: spaceshipSpriteSheet_03_130
+    21300262: spaceshipSpriteSheet_03_131
+    21300264: spaceshipSpriteSheet_03_132
+    21300266: spaceshipSpriteSheet_03_133
+    21300268: spaceshipSpriteSheet_03_134
+    21300270: spaceshipSpriteSheet_03_135
+    21300272: spaceshipSpriteSheet_03_136
+    21300274: spaceshipSpriteSheet_03_137
+    21300276: spaceshipSpriteSheet_03_138
+    21300278: spaceshipSpriteSheet_03_139
+    21300280: spaceshipSpriteSheet_03_140
+    21300282: spaceshipSpriteSheet_03_141
+    21300284: spaceshipSpriteSheet_03_142
+    21300286: spaceshipSpriteSheet_03_143
+    21300288: spaceshipSpriteSheet_03_144
+    21300290: spaceshipSpriteSheet_03_145
+    21300292: spaceshipSpriteSheet_03_146
+    21300294: spaceshipSpriteSheet_03_147
+    21300296: spaceshipSpriteSheet_03_148
+    21300298: spaceshipSpriteSheet_03_149
+    21300300: spaceshipSpriteSheet_03_150
+    21300302: spaceshipSpriteSheet_03_151
+    21300304: spaceshipSpriteSheet_03_152
+    21300306: spaceshipSpriteSheet_03_153
+    21300308: spaceshipSpriteSheet_03_154
+    21300310: spaceshipSpriteSheet_03_155
+    21300312: spaceshipSpriteSheet_03_156
+    21300314: spaceshipSpriteSheet_03_157
+    21300316: spaceshipSpriteSheet_03_158
+    21300318: spaceshipSpriteSheet_03_159
+    21300320: spaceshipSpriteSheet_03_160
+    21300322: spaceshipSpriteSheet_03_161
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_0
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 3931
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_1
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 3837
+        width: 258
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_2
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 3931
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_3
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 3837
+        width: 258
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_4
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 3931
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_5
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 3837
+        width: 257
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_6
+      rect:
+        serializedVersion: 2
+        x: 1255
+        y: 3837
+        width: 259
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_7
+      rect:
+        serializedVersion: 2
+        x: 1622
+        y: 3837
+        width: 259
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_8
+      rect:
+        serializedVersion: 2
+        x: 1989
+        y: 3837
+        width: 260
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_9
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 3751
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_10
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 3657
+        width: 257
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_11
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 3751
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_12
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 3657
+        width: 258
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_13
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 3751
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_14
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 3657
+        width: 258
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_15
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 3751
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_16
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 3657
+        width: 258
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_17
+      rect:
+        serializedVersion: 2
+        x: 1605
+        y: 3751
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_18
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 3657
+        width: 258
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_19
+      rect:
+        serializedVersion: 2
+        x: 1972
+        y: 3751
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_20
+      rect:
+        serializedVersion: 2
+        x: 1973
+        y: 3657
+        width: 258
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_21
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 3586
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_22
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 3455
+        width: 258
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_23
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 3586
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_24
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 3455
+        width: 258
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_25
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 3586
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_26
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 3455
+        width: 258
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_27
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 3585
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_28
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 3493
+        width: 258
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_29
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 3585
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_30
+      rect:
+        serializedVersion: 2
+        x: 1591
+        y: 3493
+        width: 257
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_31
+      rect:
+        serializedVersion: 2
+        x: 1956
+        y: 3493
+        width: 259
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_32
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 3402
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_33
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 3272
+        width: 258
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_34
+      rect:
+        serializedVersion: 2
+        x: 1593
+        y: 3272
+        width: 259
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_35
+      rect:
+        serializedVersion: 2
+        x: 1958
+        y: 3271
+        width: 259
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_36
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 3372
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_37
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 3242
+        width: 258
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_38
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 3372
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_39
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 3242
+        width: 258
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_40
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 3278
+        width: 260
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_41
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 3186
+        width: 16
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_42
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 3079
+        width: 257
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_43
+      rect:
+        serializedVersion: 2
+        x: 1974
+        y: 3194
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_44
+      rect:
+        serializedVersion: 2
+        x: 1983
+        y: 3085
+        width: 266
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_45
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 3179
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_46
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 3179
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_47
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 3099
+        width: 267
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_48
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 3092
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_49
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 3097
+        width: 265
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_50
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 3097
+        width: 267
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_51
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 3092
+        width: 266
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_52
+      rect:
+        serializedVersion: 2
+        x: 2066
+        y: 3086
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_53
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 3082
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_54
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 3082
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_55
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 3070
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_56
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 3071
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_57
+      rect:
+        serializedVersion: 2
+        x: 1654
+        y: 3070
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_58
+      rect:
+        serializedVersion: 2
+        x: 1681
+        y: 3071
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_59
+      rect:
+        serializedVersion: 2
+        x: 2074
+        y: 3022
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_60
+      rect:
+        serializedVersion: 2
+        x: 2081
+        y: 2937
+        width: 267
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_61
+      rect:
+        serializedVersion: 2
+        x: 1473
+        y: 2796
+        width: 875
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_62
+      rect:
+        serializedVersion: 2
+        x: 2073
+        y: 2880
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_63
+      rect:
+        serializedVersion: 2
+        x: 2073
+        y: 2739
+        width: 5
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_64
+      rect:
+        serializedVersion: 2
+        x: 2093
+        y: 2757
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_65
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 2659
+        width: 2163
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_66
+      rect:
+        serializedVersion: 2
+        x: 2076
+        y: 2615
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_67
+      rect:
+        serializedVersion: 2
+        x: 2075
+        y: 2602
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_68
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 2507
+        width: 2163
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_69
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 2333
+        width: 2288
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_70
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 2161
+        width: 2286
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_71
+      rect:
+        serializedVersion: 2
+        x: 2078
+        y: 2142
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_72
+      rect:
+        serializedVersion: 2
+        x: 2098
+        y: 2142
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_73
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 1975
+        width: 2294
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_74
+      rect:
+        serializedVersion: 2
+        x: 2098
+        y: 1974
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_75
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 1851
+        width: 2296
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_76
+      rect:
+        serializedVersion: 2
+        x: 2068
+        y: 1826
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_77
+      rect:
+        serializedVersion: 2
+        x: 2089
+        y: 1834
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_78
+      rect:
+        serializedVersion: 2
+        x: 2070
+        y: 1813
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_79
+      rect:
+        serializedVersion: 2
+        x: 2090
+        y: 1817
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_80
+      rect:
+        serializedVersion: 2
+        x: 2070
+        y: 1800
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_81
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 1716
+        width: 2167
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_82
+      rect:
+        serializedVersion: 2
+        x: 1477
+        y: 1581
+        width: 875
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_83
+      rect:
+        serializedVersion: 2
+        x: 2077
+        y: 1666
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_84
+      rect:
+        serializedVersion: 2
+        x: 2078
+        y: 1502
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_85
+      rect:
+        serializedVersion: 2
+        x: 2085
+        y: 1417
+        width: 267
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_86
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 1178
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_87
+      rect:
+        serializedVersion: 2
+        x: 1437
+        y: 1085
+        width: 279
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_88
+      rect:
+        serializedVersion: 2
+        x: 1458
+        y: 1181
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_89
+      rect:
+        serializedVersion: 2
+        x: 1756
+        y: 1087
+        width: 280
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_90
+      rect:
+        serializedVersion: 2
+        x: 2058
+        y: 1168
+        width: 6
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_91
+      rect:
+        serializedVersion: 2
+        x: 2079
+        y: 1083
+        width: 259
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_92
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1148
+        width: 4
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_93
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 1148
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_94
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 1164
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_95
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1085
+        width: 267
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_96
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 1148
+        width: 4
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_97
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 1160
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_98
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 1152
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_99
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 1152
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_100
+      rect:
+        serializedVersion: 2
+        x: 2064
+        y: 1156
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_101
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 1134
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_102
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 1135
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_103
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 1134
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_104
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 1054
+        width: 265
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_105
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 1054
+        width: 267
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_106
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 1054
+        width: 266
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_107
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 851
+        width: 280
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_108
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 933
+        width: 6
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_109
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 847
+        width: 260
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_110
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 851
+        width: 280
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_111
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 851
+        width: 280
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_112
+      rect:
+        serializedVersion: 2
+        x: 1436
+        y: 935
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_113
+      rect:
+        serializedVersion: 2
+        x: 1457
+        y: 943
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_114
+      rect:
+        serializedVersion: 2
+        x: 1458
+        y: 851
+        width: 258
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_115
+      rect:
+        serializedVersion: 2
+        x: 1758
+        y: 934
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_116
+      rect:
+        serializedVersion: 2
+        x: 1780
+        y: 851
+        width: 256
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_117
+      rect:
+        serializedVersion: 2
+        x: 2058
+        y: 945
+        width: 6
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_118
+      rect:
+        serializedVersion: 2
+        x: 2079
+        y: 858
+        width: 259
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_119
+      rect:
+        serializedVersion: 2
+        x: 2064
+        y: 932
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_120
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 925
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_121
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 920
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_122
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 925
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_123
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 924
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_124
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 921
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_125
+      rect:
+        serializedVersion: 2
+        x: 1763
+        y: 921
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_126
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 712
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_127
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 620
+        width: 258
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_128
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 620
+        width: 260
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_129
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 620
+        width: 260
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_130
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 620
+        width: 260
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_131
+      rect:
+        serializedVersion: 2
+        x: 1563
+        y: 620
+        width: 260
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_132
+      rect:
+        serializedVersion: 2
+        x: 1930
+        y: 620
+        width: 260
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_133
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 533
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_134
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 440
+        width: 258
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_135
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 533
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_136
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 440
+        width: 258
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_137
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 532
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_138
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 440
+        width: 258
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_139
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 532
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_140
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 440
+        width: 258
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_141
+      rect:
+        serializedVersion: 2
+        x: 1546
+        y: 532
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_142
+      rect:
+        serializedVersion: 2
+        x: 1547
+        y: 440
+        width: 258
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_143
+      rect:
+        serializedVersion: 2
+        x: 1913
+        y: 440
+        width: 259
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_144
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 368
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_145
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 238
+        width: 258
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_146
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 368
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_147
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 238
+        width: 258
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_148
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 238
+        width: 259
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_149
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 274
+        width: 260
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_150
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 274
+        width: 260
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_151
+      rect:
+        serializedVersion: 2
+        x: 1897
+        y: 274
+        width: 260
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_152
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 53
+        width: 259
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_153
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 184
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_154
+      rect:
+        serializedVersion: 2
+        x: 1534
+        y: 53
+        width: 258
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_155
+      rect:
+        serializedVersion: 2
+        x: 1899
+        y: 53
+        width: 260
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_156
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 154
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_157
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 62
+        width: 258
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_158
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 154
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_159
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 62
+        width: 258
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_160
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 154
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spaceshipSpriteSheet_03_161
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 62
+        width: 257
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
