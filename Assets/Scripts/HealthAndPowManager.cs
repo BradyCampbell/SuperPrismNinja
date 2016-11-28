@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class HealthAndPowManager : MonoBehaviour {
 
@@ -12,7 +13,7 @@ public class HealthAndPowManager : MonoBehaviour {
 	public bool invincible = false;
 	public bool dodging = false;
 
-	public bool dodgePow;
+	public bool dodgePow = false;
 	public float dodgeTime = 1;
 	private bool dodgeCooldown = false;
 	public float coolTime = 2;
@@ -30,6 +31,7 @@ public class HealthAndPowManager : MonoBehaviour {
 	private GameObject dodgeText;
 	private GameObject extraLifeBar;
 	private GameObject extraDodgeBar;
+	public Text lifeCounterText;
 
 	// Use this for initialization
 	void Start () {
@@ -54,6 +56,8 @@ public class HealthAndPowManager : MonoBehaviour {
 		playerAnimator = player.GetComponent<Animator>();
 		playerShadow = GameObject.Find ("Player Shadow");
 		playerShadowAnimator = playerShadow.GetComponent<Animator>();
+
+		lifeCounterText.text = totalLifeCounter.ToString();
 	}
 
 	public void invincibleTrigger()
@@ -70,6 +74,7 @@ public class HealthAndPowManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		lifeCounterText.text = totalLifeCounter.ToString();
 
 		if (Input.GetKeyUp("space") && !invincible)
 		{
