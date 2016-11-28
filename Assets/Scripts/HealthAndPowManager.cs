@@ -71,7 +71,7 @@ public class HealthAndPowManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (Input.GetKeyUp("space"))
+		if (Input.GetKeyUp("space") && !invincible)
 		{
 			if (!dodgeCooldown)
 			{
@@ -84,7 +84,7 @@ public class HealthAndPowManager : MonoBehaviour {
 				} 
 				else {
 					dodgePow = false;
-					dodgeText.SetActive (false);
+					extraDodgeBar.SetActive (false);
 				}
 				Invoke ("resetDodge", dodgeTime);
 			}
@@ -117,7 +117,7 @@ public class HealthAndPowManager : MonoBehaviour {
 	public void getDodgePow()
 	{
 		dodgePow = true;
-		dodgeText.SetActive (true);
+		extraDodgeBar.SetActive (true);
 	}
 
 	void resetDodge()
