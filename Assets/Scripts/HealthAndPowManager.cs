@@ -39,7 +39,6 @@ public class HealthAndPowManager : MonoBehaviour {
 			instance = this;
 		else if (instance != this)
 			Destroy (gameObject);
-		DontDestroyOnLoad(gameObject);
 
 		HPsprite1 = GameObject.Find("nin");
 		HPsprite2 = GameObject.Find("nin (1)");
