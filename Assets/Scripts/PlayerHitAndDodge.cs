@@ -3,11 +3,16 @@ using System.Collections;
 
 public class PlayerHitAndDodge : MonoBehaviour {
 
+	public AudioClip playerHit;
+	public AudioClip enemyKill;
+	public AudioClip playerDead;
+	public AudioClip getPowerup;
+
     public SpriteRenderer spriteRenderer;
 	private Animator animator;
 	private int flickCount = 3;
 	private float flickTime = 0.1f;
-	private GameObject deathAnim;
+	public GameObject deathAnim;
 	public float invincibleTime = 6;
 	public int num_c1;
 	public int num_c2;
@@ -26,10 +31,12 @@ public class PlayerHitAndDodge : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D coll)
 	{
 		if (coll.gameObject.tag == "DodgePow") {
+			SoundManagement.instance.playSFX(getPowerup);
 			Destroy (coll.gameObject);
 			HealthAndPowManager.instance.getDodgePow();
 		}
 		if (coll.gameObject.tag == "InvinciblePow") {
+			SoundManagement.instance.playSFX(getPowerup);
 			Destroy (coll.gameObject);
 			isInvincible();
 		}
@@ -43,7 +50,7 @@ public class PlayerHitAndDodge : MonoBehaviour {
 			if (coll.gameObject.tag == "Enemy")
             {
                 Destroy(coll.gameObject);
-				SoundManagement.instance.sfxSource.Play ();
+				SoundManagement.instance.playSFX(playerHit);
 				HealthAndPowManager.instance.hp--;
 				if (HealthAndPowManager.instance.hp > 0) {
 					flicker ();
@@ -54,13 +61,9 @@ public class PlayerHitAndDodge : MonoBehaviour {
 						HealthAndPowManager.instance.respawn();
 					} 
 					else {
-						if (gameObject.tag == "PlayerShadow") {
-							deathAnim = GameObject.Find ("ninjaShadowDeathEffect");
-						} else {
-							deathAnim = GameObject.Find ("ninjaDeathEffect");
-						}
+						SoundManagement.instance.playSFX(playerDead);
 						animator.SetTrigger ("dead");
-						Instantiate (deathAnim);
+						Instantiate (deathAnim, transform.position, transform.rotation);
 						Invoke ("endGame", 1);
 					}
                 }
@@ -84,12 +87,13 @@ public class PlayerHitAndDodge : MonoBehaviour {
 		else if (coll.gameObject.tag == "Enemy" && HealthAndPowManager.instance.invincible) 
 		{
 			Destroy(coll.gameObject);
-			//Maybe seperate sound?
+			SoundManagement.instance.playSFX(enemyKill);
 		}
 	}
 
 	void endGame()
 	{
+		SoundManagement.instance.musicSource.Stop ();
 		Application.LoadLevel("End");
 	}
 

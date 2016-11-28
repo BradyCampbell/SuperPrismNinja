@@ -3,9 +3,11 @@ using System.Collections;
 
 public class NavStart : MonoBehaviour {
 
+	public AudioClip titleMusic;
+
 	// Use this for initialization
 	void Start () {
-	
+		SoundManagement.instance.playMusic(titleMusic);
 	}
 	
 	// Update is called once per frame

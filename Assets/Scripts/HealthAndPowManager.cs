@@ -33,12 +33,16 @@ public class HealthAndPowManager : MonoBehaviour {
 	private GameObject extraDodgeBar;
 	public Text lifeCounterText;
 
+	public AudioClip gameMusic;
+
 	// Use this for initialization
 	void Start () {
 		if (instance == null)
 			instance = this;
 		else if (instance != this)
 			Destroy (gameObject);
+
+		SoundManagement.instance.playMusic(gameMusic);
 
 		HPsprite1 = GameObject.Find("nin");
 		HPsprite2 = GameObject.Find("nin (1)");
