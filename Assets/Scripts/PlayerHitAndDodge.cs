@@ -7,11 +7,6 @@ public class PlayerHitAndDodge : MonoBehaviour {
 	private Animator animator;
 	private int flickCount = 3;
 	private float flickTime = 0.1f;
-    private bool dodging = false;
-	private int dodgePowCount = 0;
-    public float dodgeTime = 1;
-    private bool dodgeCooldown = false;
-    public float coolTime = 2;
 	private GameObject deathAnim;
 	public float invincibleTime = 6;
 	public int num_c1;
@@ -30,16 +25,22 @@ public class PlayerHitAndDodge : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D coll)
 	{
-		if (!dodging && !HealthAndPowManager.instance.invincible)
+		if (coll.gameObject.tag == "DodgePow") {
+			Destroy (coll.gameObject);
+			HealthAndPowManager.instance.getDodgePow();
+		}
+		if (coll.gameObject.tag == "InvinciblePow") {
+			Destroy (coll.gameObject);
+			isInvincible();
+		}
+		if (coll.gameObject.tag == "lifeGem") {
+			Destroy (coll.gameObject);
+			HealthAndPowManager.instance.lifeCounter++;
+			HealthAndPowManager.instance.totalLifeCounter++;
+		}
+		if (!HealthAndPowManager.instance.dodging && !HealthAndPowManager.instance.invincible)
         {
-			if (coll.gameObject.tag == "DodgePow") {
-				dodgePowCount++;
-			}
-			if (coll.gameObject.tag == "InvinciblePow") {
-				Destroy (coll.gameObject);
-				isInvincible();
-			}
-			if (coll.gameObject.tag == "Enemy" && HealthAndPowManager.instance.invincible== false)
+			if (coll.gameObject.tag == "Enemy")
             {
                 Destroy(coll.gameObject);
 				SoundManagement.instance.sfxSource.Play ();
@@ -49,15 +50,19 @@ public class PlayerHitAndDodge : MonoBehaviour {
 				}
 				if (HealthAndPowManager.instance.hp <= 0)
                 {
-					if (gameObject.tag == "PlayerShadow") {
-						deathAnim = GameObject.Find ("ninjaShadowDeathEffect");
+					if (HealthAndPowManager.instance.extraLife) {
+						HealthAndPowManager.instance.respawn();
 					} 
 					else {
-						deathAnim = GameObject.Find ("ninjaDeathEffect");
+						if (gameObject.tag == "PlayerShadow") {
+							deathAnim = GameObject.Find ("ninjaShadowDeathEffect");
+						} else {
+							deathAnim = GameObject.Find ("ninjaDeathEffect");
+						}
+						animator.SetTrigger ("dead");
+						Instantiate (deathAnim);
+						Invoke ("endGame", 1);
 					}
-					animator.SetTrigger("dead");
-					Instantiate (deathAnim);
-					Invoke("endGame", 1);
                 }
             }
 			if (coll.gameObject.tag == "Collectible1") 
@@ -76,7 +81,7 @@ public class PlayerHitAndDodge : MonoBehaviour {
 				num_c3++;
 			}
         }
-		else if (coll.gameObject.tag == "Enemy" && HealthAndPowManager.instance.invincible == true) 
+		else if (coll.gameObject.tag == "Enemy" && HealthAndPowManager.instance.invincible) 
 		{
 			Destroy(coll.gameObject);
 			//Maybe seperate sound?
@@ -108,43 +113,13 @@ public class PlayerHitAndDodge : MonoBehaviour {
 
     void Update()
     {
-        if (Input.GetKeyUp("space"))
-        {
-            if (!dodgeCooldown)
-            {
-                dodging = true;
-                spriteRenderer.enabled = false;
-				if (dodgePowCount == 0) {
-					dodgeCooldown = true;
-				} 
-				else {
-					dodgePowCount--;
-				}
-				Invoke ("resetDodge", dodgeTime);
-            }
-        }
     }
-
-    void resetDodge()
-    {
-		dodging = false;
-        spriteRenderer.enabled = true;
-		if (dodgeCooldown == true) {
-			Invoke ("resetCooldown", coolTime);
-		}
-    }
-
-    void resetCooldown()
-    {
-        dodgeCooldown = false;
-    }
-
+		
 	void isInvincible()
 	{
 		HealthAndPowManager.instance.invincible = true;
 		HealthAndPowManager.instance.invincibleTrigger();
 		Invoke("resetInvincible", invincibleTime);
-		//Change the character on some visual level i.e. rainbow glow?
 	}
 
 	void resetInvincible()
