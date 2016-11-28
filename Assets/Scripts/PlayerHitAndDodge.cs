@@ -7,6 +7,7 @@ public class PlayerHitAndDodge : MonoBehaviour {
 	public AudioClip enemyKill;
 	public AudioClip playerDead;
 	public AudioClip getPowerup;
+	public AudioClip getGem;
 
     public SpriteRenderer spriteRenderer;
 	private Animator animator;
@@ -41,6 +42,7 @@ public class PlayerHitAndDodge : MonoBehaviour {
 			isInvincible();
 		}
 		if (coll.gameObject.tag == "lifeGem") {
+			SoundManagement.instance.playSFX(getGem);
 			Destroy (coll.gameObject);
 			HealthAndPowManager.instance.lifeCounter++;
 			HealthAndPowManager.instance.totalLifeCounter++;
