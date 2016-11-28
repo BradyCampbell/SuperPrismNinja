@@ -18,5 +18,16 @@ public class NavStart : MonoBehaviour {
 		{
 			Application.LoadLevel("Menu");
 		}
+
+		if (Input.GetKeyUp ("escape")) 
+		{
+			quitGame();
+		}
 	}
+
+	public void quitGame()
+	{
+		Application.Quit();
+	}
+		
 }
