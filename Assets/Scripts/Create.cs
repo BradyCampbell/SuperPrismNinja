@@ -11,13 +11,15 @@ public class Create : MonoBehaviour
 	public GameObject obj4;
 	public GameObject obj5;
 	public Transform generationPoint;
+	public GameObject spaceShip;
 
 	private float xPosition;
 	private float zPosition;
 
+	public float spaceShipTime;
+	private int spaceShipSpawn;
 
-
-	float createRate = 3.0f, createRateTimer;
+	float createRate = 1.5f, createRateTimer;
 	float rateIncrease = 0.1f, initialCreateDelay = 3.0f;
 	int callCounter = 0, callsBeforeRateIncrease = 10;
 
@@ -31,8 +33,10 @@ public class Create : MonoBehaviour
 	void Start ()
 	{
 		xPosition = generationPoint.transform.position.x;
-		createRateTimer = createRate + initialCreateDelay;
 
+		spaceShipSpawn = 0;
+
+		createRateTimer = createRate + initialCreateDelay;
 
 	}
 
@@ -47,9 +51,13 @@ public class Create : MonoBehaviour
 
 	void CustomInvoke ()
 	{
+		spaceShipSpawn++;
 
-		int randNum = Random.Range (0, 6);
+		int randNum = Random.Range (0, 7);
 
+		if (spaceShipSpawn <= spaceShipTime) {
+			randNum = Random.Range (0, 6);
+		}
 
 		spawn (randNum);
 
@@ -58,7 +66,7 @@ public class Create : MonoBehaviour
 			createRate -= rateIncrease;
 			callCounter = 0;
 		}
-		createRateTimer = createRate + Random.Range(0,2) + Time.deltaTime;
+		createRateTimer = createRate + Random.Range(0,4) + Time.deltaTime;
 	}
 
 	void spawn (int num)
@@ -118,6 +126,13 @@ public class Create : MonoBehaviour
 			Instantiate (obj5, this.transform.position, this.transform.rotation);
 		}
 
+		if (num == 6) {
 
+			zPosition = generationPoint.transform.position.z + Random.Range (0, 5);
+
+			this.transform.position = new Vector3 (xPosition, this.transform.position.y, zPosition);
+
+			Instantiate (spaceShip, this.transform.position, this.transform.rotation);
+		}
 	}
 }
