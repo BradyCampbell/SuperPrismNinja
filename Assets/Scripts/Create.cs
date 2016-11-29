@@ -19,7 +19,7 @@ public class Create : MonoBehaviour
 	public float spaceShipTime;
 	private int spaceShipSpawn;
 
-	float createRate = 3.0f, createRateTimer;
+	float createRate = 1.5f, createRateTimer;
 	float rateIncrease = 0.1f, initialCreateDelay = 3.0f;
 	int callCounter = 0, callsBeforeRateIncrease = 10;
 
@@ -53,7 +53,7 @@ public class Create : MonoBehaviour
 	{
 		spaceShipSpawn++;
 
-		int randNum = Random.Range (0, 6);
+		int randNum = Random.Range (0, 7);
 
 		if (spaceShipSpawn <= spaceShipTime) {
 			randNum = Random.Range (0, 6);
@@ -66,7 +66,7 @@ public class Create : MonoBehaviour
 			createRate -= rateIncrease;
 			callCounter = 0;
 		}
-		createRateTimer = createRate + Random.Range(0,2) + Time.deltaTime;
+		createRateTimer = createRate + Random.Range(0,4) + Time.deltaTime;
 	}
 
 	void spawn (int num)
