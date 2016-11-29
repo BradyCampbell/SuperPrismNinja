@@ -7,7 +7,9 @@ public class NavStart : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		SoundManagement.instance.playMusic(titleMusic);
+		if (!SoundManagement.instance.musicSource.isPlaying) {
+			SoundManagement.instance.playMusic (titleMusic);
+		}
 	}
 	
 	// Update is called once per frame
