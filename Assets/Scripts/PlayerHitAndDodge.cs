@@ -15,18 +15,12 @@ public class PlayerHitAndDodge : MonoBehaviour {
 	private float flickTime = 0.1f;
 	public GameObject deathAnim;
 	public float invincibleTime = 6;
-	public int num_c1;
-	public int num_c2;
-	public int num_c3;
 
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.enabled = true;
 		animator = GetComponent<Animator> ();
-		num_c1 = Scoring.num_c1;
-		num_c2 = Scoring.num_c2;
-		num_c3 = Scoring.num_c3;
     }
 
 	void OnCollisionEnter2D(Collision2D coll)
@@ -46,6 +40,24 @@ public class PlayerHitAndDodge : MonoBehaviour {
 			Destroy (coll.gameObject);
 			HealthAndPowManager.instance.lifeCounter++;
 			HealthAndPowManager.instance.totalLifeCounter++;
+		}
+		if (coll.gameObject.tag == "Collectible1") 
+		{
+			SoundManagement.instance.playSFX(getPowerup);
+			Destroy (coll.gameObject);
+			Scoring.instance.num_c1++;
+		}
+		if (coll.gameObject.tag == "Collectible2") 
+		{
+			SoundManagement.instance.playSFX(getPowerup);
+			Destroy (coll.gameObject);
+			Scoring.instance.num_c2++;
+		}
+		if (coll.gameObject.tag == "Collectible3") 
+		{
+			SoundManagement.instance.playSFX(getPowerup);
+			Destroy (coll.gameObject);
+			Scoring.instance.num_c3++;
 		}
 		if (!HealthAndPowManager.instance.dodging && !HealthAndPowManager.instance.invincible)
         {
@@ -70,21 +82,6 @@ public class PlayerHitAndDodge : MonoBehaviour {
 					}
                 }
             }
-			if (coll.gameObject.tag == "Collectible1") 
-			{
-				Destroy (coll.gameObject);
-				num_c1++;
-			}
-			if (coll.gameObject.tag == "Collectible2") 
-			{
-				Destroy (coll.gameObject);
-				num_c2++;
-			}
-			if (coll.gameObject.tag == "Collectible3") 
-			{
-				Destroy (coll.gameObject);
-				num_c3++;
-			}
         }
 		else if (coll.gameObject.tag == "Enemy" && HealthAndPowManager.instance.invincible) 
 		{
@@ -96,6 +93,7 @@ public class PlayerHitAndDodge : MonoBehaviour {
 	void endGame()
 	{
 		SoundManagement.instance.musicSource.Stop ();
+		Scoring.instance.dead = true;
 		Application.LoadLevel("End");
 	}
 
