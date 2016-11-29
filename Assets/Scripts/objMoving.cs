@@ -3,11 +3,12 @@ using System.Collections;
 
 public class objMoving : MonoBehaviour {
 
-	public float movespeed = 1;
+	public float movespeed;
 	public Vector3 userDirection = Vector3.left;
 
 	public float acceleration=1;
-	public float maxSpeed=60;
+	public float maxSpeed=30;
+	public float accTimer = 10f;
 
 	// Use this for initialization
 	void Start () {
@@ -18,12 +19,16 @@ public class objMoving : MonoBehaviour {
 		
 		transform.Translate(userDirection * movespeed * Time.deltaTime);
 
-		if (Time.deltaTime >= 5.0f) {
+		accTimer -= Time.deltaTime;
+		if (accTimer <= 0) {
 
 			movespeed += acceleration;
 
-			if (movespeed > maxSpeed)
+			if (movespeed > maxSpeed) {
 				movespeed = maxSpeed;
+			}
+
+			accTimer = Time.deltaTime + 10f;
 		}
 
 	
