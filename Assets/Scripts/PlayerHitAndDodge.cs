@@ -87,6 +87,7 @@ public class PlayerHitAndDodge : MonoBehaviour {
 		{
 			Destroy(coll.gameObject);
 			SoundManagement.instance.playSFX(enemyKill);
+			Scoring.instance.num_c1++;
 		}
 	}
 
