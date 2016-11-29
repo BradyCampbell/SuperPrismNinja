@@ -14,6 +14,7 @@ public class PlayerHitAndDodge : MonoBehaviour {
 	private int flickCount = 3;
 	private float flickTime = 0.1f;
 	public GameObject deathAnim;
+	public GameObject enemyDeathAnim;
 	public float invincibleTime = 6;
 
     void Start()
@@ -85,6 +86,7 @@ public class PlayerHitAndDodge : MonoBehaviour {
         }
 		else if (coll.gameObject.tag == "Enemy" && HealthAndPowManager.instance.invincible) 
 		{
+			Instantiate (enemyDeathAnim, coll.gameObject.transform.position, coll.gameObject.transform.rotation);
 			Destroy(coll.gameObject);
 			SoundManagement.instance.playSFX(enemyKill);
 			Scoring.instance.num_c1++;
