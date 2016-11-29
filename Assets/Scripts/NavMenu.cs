@@ -15,4 +15,14 @@ public class NavMenu : MonoBehaviour {
 		}
 	
 	}
+
+	public void turnOffSound()
+	{
+		SoundManagement.instance.SoundOff ();
+	}
+
+	public void turnOnSound()
+	{
+		SoundManagement.instance.SoundOn ();
+	}
 }
