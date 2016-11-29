@@ -48,9 +48,6 @@ public class SpaceShipMoving : MonoBehaviour
 				if (this.transform.position.y >= 1.7) {
 				
 					transform.Translate (downDirection * movespeed * Time.deltaTime, Space.World);
-				} else {
-				
-					Destroy (gameObject);
 				}
 			}
 			if (rand == 1) {
