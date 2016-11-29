@@ -87,9 +87,13 @@ public class HealthAndPowManager : MonoBehaviour {
 			{
 				dodging = true;
 				playerAnimator.SetBool ("dodging", true);
-				Instantiate(smokeEffect, player.transform.position, player.transform.rotation);
+				if (SoundManagement.instance.effectsOn) {
+					Instantiate (smokeEffect, player.transform.position, player.transform.rotation);
+				}
 				playerShadowAnimator.SetBool ("dodging", true);
-				Instantiate (smokeEffect, playerShadow.transform.position, playerShadow.transform.rotation);
+				if (SoundManagement.instance.effectsOn) {
+					Instantiate (smokeEffect, playerShadow.transform.position, playerShadow.transform.rotation);
+				}
 				if (!dodgePow) {
 					dodgeCooldown = true;
 					dodgeText.SetActive(false);

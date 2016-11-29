@@ -6,6 +6,7 @@ public class SoundManagement : MonoBehaviour {
 	public AudioSource sfxSource;
 	public AudioSource musicSource;
 	public static SoundManagement instance = null;
+	public bool effectsOn = true;
 
 	// Use this for initialization
 	void Start () {

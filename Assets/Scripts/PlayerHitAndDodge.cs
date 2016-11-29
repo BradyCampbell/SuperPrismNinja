@@ -78,7 +78,9 @@ public class PlayerHitAndDodge : MonoBehaviour {
 					else {
 						SoundManagement.instance.playSFX(playerDead);
 						animator.SetTrigger ("dead");
-						Instantiate (deathAnim, transform.position, transform.rotation);
+						if (SoundManagement.instance.effectsOn) {
+							Instantiate (deathAnim, transform.position, transform.rotation);
+						}
 						Invoke ("endGame", 1);
 					}
                 }
@@ -86,7 +88,9 @@ public class PlayerHitAndDodge : MonoBehaviour {
         }
 		else if (coll.gameObject.tag == "Enemy" && HealthAndPowManager.instance.invincible) 
 		{
-			Instantiate (enemyDeathAnim, coll.gameObject.transform.position, coll.gameObject.transform.rotation);
+			if (SoundManagement.instance.effectsOn) {
+				Instantiate (enemyDeathAnim, coll.gameObject.transform.position, coll.gameObject.transform.rotation);
+			}
 			Destroy(coll.gameObject);
 			SoundManagement.instance.playSFX(enemyKill);
 			Scoring.instance.num_c1++;

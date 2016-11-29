@@ -25,4 +25,14 @@ public class NavMenu : MonoBehaviour {
 	{
 		SoundManagement.instance.SoundOn ();
 	}
+
+	public void turnOffEffects()
+	{
+		SoundManagement.instance.effectsOn = false;
+	}
+
+	public void turnOnEffects()
+	{
+		SoundManagement.instance.effectsOn = true;
+	}
 }
