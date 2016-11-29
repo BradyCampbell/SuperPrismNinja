@@ -23,6 +23,8 @@ public class HealthAndPowManager : MonoBehaviour {
 	private GameObject playerShadow;
 	private Animator playerShadowAnimator;
 
+	public GameObject smokeEffect;
+
 	private GameObject HPsprite1;
 	private GameObject HPsprite2;
 	private GameObject HPsprite3;
@@ -85,7 +87,9 @@ public class HealthAndPowManager : MonoBehaviour {
 			{
 				dodging = true;
 				playerAnimator.SetBool ("dodging", true);
+				Instantiate(smokeEffect, player.transform.position, player.transform.rotation);
 				playerShadowAnimator.SetBool ("dodging", true);
+				Instantiate (smokeEffect, playerShadow.transform.position, playerShadow.transform.rotation);
 				if (!dodgePow) {
 					dodgeCooldown = true;
 					dodgeText.SetActive(false);
