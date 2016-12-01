@@ -34,7 +34,11 @@ public class PlayerHitAndDodge : MonoBehaviour {
 		if (coll.gameObject.tag == "InvinciblePow") {
 			SoundManagement.instance.playSFX(getPowerup);
 			Destroy (coll.gameObject);
-			isInvincible();
+			if (HealthAndPowManager.instance.invincible) {
+				HealthAndPowManager.instance.invinStack = true;
+			} else {
+				isInvincible ();
+			}
 		}
 		if (coll.gameObject.tag == "lifeGem") {
 			SoundManagement.instance.playSFX(getGem);
@@ -135,6 +139,11 @@ public class PlayerHitAndDodge : MonoBehaviour {
 
 	void resetInvincible()
 	{
-		HealthAndPowManager.instance.invinFlicker ();
+		if (HealthAndPowManager.instance.invinStack) {
+			HealthAndPowManager.instance.invinStack = false;
+			Invoke ("resetInvincible", invincibleTime);
+		} else {
+			HealthAndPowManager.instance.invinFlicker ();
+		}
 	}
 }

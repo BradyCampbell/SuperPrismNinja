@@ -10,15 +10,17 @@ public class HealthAndPowManager : MonoBehaviour {
 	public int lifeGetCount = 100;
 	public int totalLifeCounter = 0;
 	public bool extraLife = false;
-	public bool invincible = false;
-	public bool dodging = false;
 
+	public bool invincible = false;
+	public int invinFlickCount = 3;
+	private float invinFlickTime = 0.1f;
+	public bool invinStack = false;
+
+	public bool dodging = false;
 	public bool dodgePow = false;
 	public float dodgeTime = 1;
 	private bool dodgeCooldown = false;
 	public float coolTime = 2;
-	public int invinFlickCount = 3;
-	private float invinFlickTime = 0.1f;
 
 	private GameObject player;
 	private Animator playerAnimator;
