@@ -81,7 +81,7 @@ public class HealthAndPowManager : MonoBehaviour {
 	void Update () {
 		lifeCounterText.text = totalLifeCounter.ToString();
 
-		if (Input.GetKeyUp("space") && !invincible)
+		if (Input.GetKeyDown("space") && !invincible)
 		{
 			if (!dodgeCooldown)
 			{
