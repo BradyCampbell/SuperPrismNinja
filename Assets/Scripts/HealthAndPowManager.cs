@@ -17,6 +17,8 @@ public class HealthAndPowManager : MonoBehaviour {
 	public float dodgeTime = 1;
 	private bool dodgeCooldown = false;
 	public float coolTime = 2;
+	public int invinFlickCount = 3;
+	private float invinFlickTime = 0.1f;
 
 	private GameObject player;
 	private Animator playerAnimator;
@@ -71,10 +73,27 @@ public class HealthAndPowManager : MonoBehaviour {
 		playerShadowAnimator.SetBool ("invincibility", true);
 	}
 
-	public void invincibleEnd()
+	public void invinFlicker()
 	{
-		playerAnimator.SetBool("invincibility", false);
-		playerShadowAnimator.SetBool("invincibility", false);
+		if (invinFlickCount > 0) {
+			playerAnimator.SetBool("invincibility", false);
+			playerShadowAnimator.SetBool("invincibility", false);
+			invinFlickCount--;
+			Invoke ("invinFlickerFinish", invinFlickTime);
+		} 
+		else {
+			invinFlickCount = 3;
+			playerAnimator.SetBool("invincibility", false);
+			playerShadowAnimator.SetBool("invincibility", false);
+			invincible = false;
+		}
+	}
+
+	void invinFlickerFinish()
+	{
+		playerAnimator.SetBool ("invincibility", true);
+		playerShadowAnimator.SetBool ("invincibility", true);
+		Invoke("invinFlicker", invinFlickTime);
 	}
 	
 	// Update is called once per frame

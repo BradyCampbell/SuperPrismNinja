@@ -135,7 +135,6 @@ public class PlayerHitAndDodge : MonoBehaviour {
 
 	void resetInvincible()
 	{
-		HealthAndPowManager.instance.invincible = false;
-		HealthAndPowManager.instance.invincibleEnd ();
+		HealthAndPowManager.instance.invinFlicker ();
 	}
 }
