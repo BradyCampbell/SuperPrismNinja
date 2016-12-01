@@ -51,7 +51,7 @@ public class HealthAndPowManager : MonoBehaviour {
 		HPsprite3 = GameObject.Find("nin (2)");
 		HPsprite4 = GameObject.Find("nin (3)");
 		HPsprite5 = GameObject.Find("nin (4)");
-		dodgeText = GameObject.Find ("dodge");
+		dodgeText = GameObject.Find ("Blink");
 		extraLifeBar = GameObject.Find ("extra life");
 		extraLifeBar.SetActive (false);
 		extraDodgeBar = GameObject.Find ("extra dodge");
