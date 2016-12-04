@@ -32,6 +32,14 @@ public class Create : MonoBehaviour
 	private float xPosition;
 	private float zPosition;
 
+	private bool obj1Active = false;
+	private bool obj2Active = false;
+
+	private int medTimer;
+	private int hardTimer;
+	public float difficultyMedTime;
+	public float difficultyHardTime; 
+
 	public float spaceShipTime;
 	private int spaceShipSpawn;
 
@@ -51,6 +59,8 @@ public class Create : MonoBehaviour
 		xPosition = generationPoint.transform.position.x;
 
 		spaceShipSpawn = 0;
+		medTimer = 0;
+		hardTimer = 0;
 
 		createRateTimer = createRate + initialCreateDelay;
 
@@ -85,6 +95,19 @@ public class Create : MonoBehaviour
 	void CustomInvoke ()
 	{
 		spaceShipSpawn++;
+		if (medTimer >= difficultyMedTime) {
+			obj1Active = true;
+		} 
+		else {
+			medTimer++;
+		}
+
+		if (obj1Active && hardTimer >= difficultyHardTime) {
+			obj2Active = true;
+		} 
+		else {
+			hardTimer++;
+		}
 
 		int randNum = Random.Range (0, (maxRange - 1));
 
@@ -113,7 +136,7 @@ public class Create : MonoBehaviour
 
 			Instantiate (obj, this.transform.position, this.transform.rotation);
 		}
-		if (num >= obj1Range && num < obj2Range) {
+		if (num >= obj1Range && num < obj2Range && obj1Active) {
 
 
 			zPosition = generationPoint.transform.position.z + Random.Range (0, 5);
@@ -122,7 +145,7 @@ public class Create : MonoBehaviour
 
 			Instantiate (obj1, this.transform.position, this.transform.rotation);
 		}
-		if (num >= obj2Range && num < obj3Range) {
+		if (num >= obj2Range && num < obj3Range && obj2Active) {
 
 
 			zPosition = generationPoint.transform.position.z + Random.Range (0, 5);
