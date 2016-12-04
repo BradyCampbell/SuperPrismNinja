@@ -12,6 +12,22 @@ public class Create : MonoBehaviour
 	public GameObject obj5;
 	public Transform generationPoint;
 	public GameObject spaceShip;
+	private int maxRange = 100;
+
+	public int objMinPercent;
+	public int obj1Percent;
+	public int obj2Percent;
+	public int obj3Percent;
+	public int obj4Percent;
+	public int obj5Percent;
+	public int spaceshipPercent;
+
+	private int obj1Range;
+	private int obj2Range;
+	private int obj3Range;
+	private int obj4Range;
+	private int obj5Range;
+	private int spaceshipRange;
 
 	private float xPosition;
 	private float zPosition;
@@ -38,8 +54,25 @@ public class Create : MonoBehaviour
 
 		createRateTimer = createRate + initialCreateDelay;
 
+		calculateRanges ();
+
 	}
 
+
+	void calculateRanges()
+	{
+		spaceshipRange = maxRange - spaceshipPercent; 
+		obj5Range = spaceshipRange - obj5Percent; 
+		obj4Range = obj5Range - obj4Percent; 
+		obj3Range = obj4Range - obj3Percent; 
+		obj2Range = obj3Range - obj2Percent; 
+		obj1Range = obj2Range - obj1Percent; 
+
+		if (obj1Range < objMinPercent) {
+			maxRange = maxRange + (objMinPercent - obj1Range);
+			calculateRanges ();
+		}
+	}
 
 	void Update ()
 	{
@@ -53,10 +86,10 @@ public class Create : MonoBehaviour
 	{
 		spaceShipSpawn++;
 
-		int randNum = Random.Range (0, 20);
+		int randNum = Random.Range (0, (maxRange - 1));
 
 		if (spaceShipSpawn <= spaceShipTime) {
-			randNum = Random.Range (0, 17);
+			randNum = Random.Range (0, (spaceshipRange - 1));
 		}
 
 		spawn (randNum);
@@ -71,7 +104,7 @@ public class Create : MonoBehaviour
 
 	void spawn (int num)
 	{
-		if (num >= 0 && num <= 3) {
+		if (num >= 0 && num < obj1Range) {
 
 
 			zPosition = generationPoint.transform.position.z + Random.Range (0, 5);
@@ -80,7 +113,7 @@ public class Create : MonoBehaviour
 
 			Instantiate (obj, this.transform.position, this.transform.rotation);
 		}
-		if (num >= 4 && num <= 7) {
+		if (num >= obj1Range && num < obj2Range) {
 
 
 			zPosition = generationPoint.transform.position.z + Random.Range (0, 5);
@@ -89,7 +122,7 @@ public class Create : MonoBehaviour
 
 			Instantiate (obj1, this.transform.position, this.transform.rotation);
 		}
-		if (num >= 8 && num <= 11) {
+		if (num >= obj2Range && num < obj3Range) {
 
 
 			zPosition = generationPoint.transform.position.z + Random.Range (0, 5);
@@ -98,7 +131,7 @@ public class Create : MonoBehaviour
 
 			Instantiate (obj2, this.transform.position, this.transform.rotation);
 		}
-		if (num >= 12 && num <= 14) {
+		if (num >= obj3Range && num < obj4Range) {
 
 
 			zPosition = generationPoint.transform.position.z + Random.Range (0, 5);
@@ -107,7 +140,7 @@ public class Create : MonoBehaviour
 
 			Instantiate (obj3, this.transform.position, this.transform.rotation);
 		}
-		if (num == 15 || num == 16) {
+		if (num >= obj4Range && num < obj5Range) {
 
 
 			zPosition = generationPoint.transform.position.z + Random.Range (0, 5);
@@ -116,7 +149,7 @@ public class Create : MonoBehaviour
 
 			Instantiate (obj4, this.transform.position, this.transform.rotation);
 		}
-		if (num == 17) {
+		if (num >= obj5Range && num < spaceshipRange) {
 
 
 			zPosition = generationPoint.transform.position.z + Random.Range (0, 5);
@@ -126,7 +159,7 @@ public class Create : MonoBehaviour
 			Instantiate (obj5, this.transform.position, this.transform.rotation);
 		}
 
-		if (num >= 18 && num <= 20) {
+		if (num >= spaceshipRange && num < maxRange) {
 
 			zPosition = generationPoint.transform.position.z + Random.Range (0, 5);
 
