@@ -37,9 +37,11 @@ public class HealthAndPowManager : MonoBehaviour {
 	private GameObject dodgeText;
 	private GameObject extraLifeBar;
 	private GameObject extraDodgeBar;
+	private GameObject starfield;
 	public Text lifeCounterText;
 
 	public AudioClip gameMusic;
+	public AudioClip dodgeSound;
 
 	// Use this for initialization
 	void Start () {
@@ -67,6 +69,14 @@ public class HealthAndPowManager : MonoBehaviour {
 		playerShadowAnimator = playerShadow.GetComponent<Animator>();
 
 		lifeCounterText.text = totalLifeCounter.ToString();
+
+		starfield = GameObject.Find ("StarfieldBG");
+
+		if (!SoundManagement.instance.effectsOn) {
+			starfield.SetActive (false);
+		} else {
+			starfield.SetActive (true);
+		}
 	}
 
 	public void invincibleTrigger()
@@ -107,6 +117,7 @@ public class HealthAndPowManager : MonoBehaviour {
 			if (!dodgeCooldown)
 			{
 				dodging = true;
+				SoundManagement.instance.playSFX (dodgeSound);
 				playerAnimator.SetBool ("dodging", true);
 				if (SoundManagement.instance.effectsOn) {
 					Instantiate (smokeEffect, player.transform.position, player.transform.rotation);
