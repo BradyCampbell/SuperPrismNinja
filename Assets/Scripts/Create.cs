@@ -53,10 +53,10 @@ public class Create : MonoBehaviour
 	{
 		spaceShipSpawn++;
 
-		int randNum = Random.Range (0, 7);
+		int randNum = Random.Range (0, 20);
 
 		if (spaceShipSpawn <= spaceShipTime) {
-			randNum = Random.Range (0, 6);
+			randNum = Random.Range (0, 17);
 		}
 
 		spawn (randNum);
@@ -71,7 +71,7 @@ public class Create : MonoBehaviour
 
 	void spawn (int num)
 	{
-		if (num == 0) {
+		if (num >= 0 && num <= 3) {
 
 
 			zPosition = generationPoint.transform.position.z + Random.Range (0, 5);
@@ -80,7 +80,7 @@ public class Create : MonoBehaviour
 
 			Instantiate (obj, this.transform.position, this.transform.rotation);
 		}
-		if (num == 1) {
+		if (num >= 4 && num <= 7) {
 
 
 			zPosition = generationPoint.transform.position.z + Random.Range (0, 5);
@@ -89,7 +89,7 @@ public class Create : MonoBehaviour
 
 			Instantiate (obj1, this.transform.position, this.transform.rotation);
 		}
-		if (num == 2) {
+		if (num >= 8 && num <= 11) {
 
 
 			zPosition = generationPoint.transform.position.z + Random.Range (0, 5);
@@ -98,7 +98,7 @@ public class Create : MonoBehaviour
 
 			Instantiate (obj2, this.transform.position, this.transform.rotation);
 		}
-		if (num == 3) {
+		if (num >= 12 && num <= 14) {
 
 
 			zPosition = generationPoint.transform.position.z + Random.Range (0, 5);
@@ -107,7 +107,7 @@ public class Create : MonoBehaviour
 
 			Instantiate (obj3, this.transform.position, this.transform.rotation);
 		}
-		if (num == 4) {
+		if (num == 15 || num == 16) {
 
 
 			zPosition = generationPoint.transform.position.z + Random.Range (0, 5);
@@ -116,7 +116,7 @@ public class Create : MonoBehaviour
 
 			Instantiate (obj4, this.transform.position, this.transform.rotation);
 		}
-		if (num == 5) {
+		if (num == 17) {
 
 
 			zPosition = generationPoint.transform.position.z + Random.Range (0, 5);
@@ -126,7 +126,7 @@ public class Create : MonoBehaviour
 			Instantiate (obj5, this.transform.position, this.transform.rotation);
 		}
 
-		if (num == 6) {
+		if (num >= 18 && num <= 20) {
 
 			zPosition = generationPoint.transform.position.z + Random.Range (0, 5);
 
