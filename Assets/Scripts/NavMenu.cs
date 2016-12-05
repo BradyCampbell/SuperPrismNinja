@@ -35,4 +35,9 @@ public class NavMenu : MonoBehaviour {
 	{
 		SoundManagement.instance.effectsOn = true;
 	}
+
+	public void deleteHighScore()
+	{
+		PlayerPrefs.DeleteKey ("highscore");
+	}
 }
