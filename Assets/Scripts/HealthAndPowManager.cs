@@ -41,9 +41,11 @@ public class HealthAndPowManager : MonoBehaviour {
 	public Text lifeCounterText;
 
 	public AudioClip gameMusic;
+	public AudioClip pauseSound;
 	public AudioClip dodgeSound;
 
 	public bool spawnLock = false;
+	public bool paused = false;
 
 	// Use this for initialization
 	void Start () {
@@ -116,7 +118,7 @@ public class HealthAndPowManager : MonoBehaviour {
 
 		if (Input.GetKeyDown("space") && !invincible)
 		{
-			if (!dodgeCooldown)
+			if (!dodgeCooldown && !paused)
 			{
 				dodging = true;
 				SoundManagement.instance.playSFX (dodgeSound);
@@ -137,6 +139,20 @@ public class HealthAndPowManager : MonoBehaviour {
 					extraDodgeBar.SetActive (false);
 				}
 				Invoke ("resetDodge", dodgeTime);
+			}
+		}
+
+		if (Input.GetKeyDown ("return") || Input.GetKeyDown ("escape")) {
+			if (!paused) {
+				paused = true;
+				Time.timeScale = 0.0f;
+				SoundManagement.instance.musicSource.Pause();
+				SoundManagement.instance.playSFX(pauseSound);
+			} else {
+				paused = false;
+				Time.timeScale = 1.0f;
+				SoundManagement.instance.playSFX(pauseSound);
+				SoundManagement.instance.musicSource.UnPause();
 			}
 		}
 
