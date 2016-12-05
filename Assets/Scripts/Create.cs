@@ -11,6 +11,7 @@ public class Create : MonoBehaviour
 	public GameObject obj4;
 	public GameObject obj5;
 	public Transform generationPoint;
+	public Transform spaceshipPoint;
 	public GameObject spaceShip;
 	private int maxRange = 100;
 
@@ -184,11 +185,7 @@ public class Create : MonoBehaviour
 
 		if (num >= spaceshipRange && num < maxRange) {
 
-			zPosition = generationPoint.transform.position.z + Random.Range (0, 5);
-
-			this.transform.position = new Vector3 (xPosition, this.transform.position.y, zPosition);
-
-			Instantiate (spaceShip, this.transform.position, this.transform.rotation);
+			Instantiate (spaceShip, spaceshipPoint.transform.position, this.transform.rotation);
 		}
 	}
 }

@@ -8,7 +8,7 @@ public class SpaceShipMoving : MonoBehaviour
 	public Vector3 downDirection = Vector3.down;
 	private float yPosition;
 	private int rand;
-	private float destory= 200;
+	private float destory = 200;
 	private int count = 0;
 
 	// Use this for initialization
