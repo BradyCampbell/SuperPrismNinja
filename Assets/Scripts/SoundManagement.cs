@@ -27,11 +27,13 @@ public class SoundManagement : MonoBehaviour {
 	public void SoundOff()
 	{
 		musicSource.enabled = false;
+		jingleSource.enabled = false;
 	}
 
 	public void SoundOn()
 	{
 		musicSource.enabled = true;
+		jingleSource.enabled = true;
 	}
 
 	public void playSFX (AudioClip SFX)

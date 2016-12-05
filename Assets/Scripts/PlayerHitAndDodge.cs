@@ -100,7 +100,7 @@ public class PlayerHitAndDodge : MonoBehaviour {
 			HealthAndPowManager.instance.spawnLock = false;
 			Destroy (coll.gameObject);
 			SoundManagement.instance.playSFX (enemyKill);
-			Scoring.instance.num_c1++;
+			Scoring.instance.num_c2++;
 		}
 	}
 
