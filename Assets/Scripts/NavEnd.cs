@@ -10,7 +10,7 @@ public class NavEnd : MonoBehaviour {
 	void Start () {
 		
 		scoreDisplay.text = Scoring.instance.timeScore.ToString();
-		highDisplay.text = PlayerPrefs.GetInt ("highscore").ToString();
+		highDisplay.text = PlayerPrefs.GetInt("highscore").ToString();
 		Destroy (Scoring.instance);
 	}
 	
