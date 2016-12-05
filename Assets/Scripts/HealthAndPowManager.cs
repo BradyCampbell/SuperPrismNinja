@@ -37,15 +37,19 @@ public class HealthAndPowManager : MonoBehaviour {
 	private GameObject dodgeText;
 	private GameObject extraLifeBar;
 	private GameObject extraDodgeBar;
+	private GameObject pauseTop;
+	private GameObject pauseBottom;
 	private GameObject starfield;
 	public Text lifeCounterText;
 
 	public AudioClip gameMusic;
 	public AudioClip pauseSound;
+	public AudioClip unpauseSound;
 	public AudioClip dodgeSound;
 
 	public bool spawnLock = false;
 	public bool paused = false;
+	private bool pauseResume = false;
 
 	// Use this for initialization
 	void Start () {
@@ -75,6 +79,11 @@ public class HealthAndPowManager : MonoBehaviour {
 		lifeCounterText.text = totalLifeCounter.ToString();
 
 		starfield = GameObject.Find ("StarfieldBG");
+
+		pauseTop = GameObject.Find ("Paused (1)");
+		pauseTop.SetActive (false);
+		pauseBottom = GameObject.Find ("Paused");
+		pauseBottom.SetActive (false);
 
 		if (!SoundManagement.instance.effectsOn) {
 			starfield.SetActive (false);
@@ -146,13 +155,23 @@ public class HealthAndPowManager : MonoBehaviour {
 			if (!paused) {
 				paused = true;
 				Time.timeScale = 0.0f;
-				SoundManagement.instance.musicSource.Pause();
-				SoundManagement.instance.playSFX(pauseSound);
+				pauseTop.SetActive (true);
+				pauseBottom.SetActive (true);
+				SoundManagement.instance.playSFX (pauseSound);
+				if (SoundManagement.instance.musicSource.isPlaying) {
+					SoundManagement.instance.musicSource.Pause();
+					pauseResume = true;
+				}
 			} else {
 				paused = false;
 				Time.timeScale = 1.0f;
-				SoundManagement.instance.playSFX(pauseSound);
-				SoundManagement.instance.musicSource.UnPause();
+				pauseTop.SetActive (false);
+				pauseBottom.SetActive (false);
+				SoundManagement.instance.playSFX(unpauseSound);
+				if (pauseResume) {
+					SoundManagement.instance.musicSource.UnPause ();
+					pauseResume = false;
+				}
 			}
 		}
 

@@ -37,6 +37,7 @@ public class PlayerHitAndDodge : MonoBehaviour {
 			if (HealthAndPowManager.instance.invincible) {
 				HealthAndPowManager.instance.invinStack = true;
 			} else {
+				SoundManagement.instance.jingleTime ();
 				isInvincible ();
 			}
 		}
@@ -146,6 +147,7 @@ public class PlayerHitAndDodge : MonoBehaviour {
 			Invoke ("resetInvincible", invincibleTime);
 		} else {
 			HealthAndPowManager.instance.invinFlicker ();
+			SoundManagement.instance.jingleStop ();
 		}
 	}
 }

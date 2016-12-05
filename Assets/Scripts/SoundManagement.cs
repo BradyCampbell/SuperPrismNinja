@@ -5,6 +5,7 @@ public class SoundManagement : MonoBehaviour {
 
 	public AudioSource sfxSource;
 	public AudioSource musicSource;
+	public AudioSource jingleSource;
 	public static SoundManagement instance = null;
 	public bool effectsOn = true;
 
@@ -42,5 +43,17 @@ public class SoundManagement : MonoBehaviour {
 	{
 		musicSource.clip = music;
 		musicSource.Play ();
+	}
+
+	public void jingleTime()
+	{
+		musicSource.Pause ();
+		jingleSource.Play ();
+	}
+
+	public void jingleStop()
+	{
+		musicSource.UnPause ();
+		jingleSource.Stop ();
 	}
 }
