@@ -64,39 +64,41 @@ public class PlayerHitAndDodge : MonoBehaviour {
 			Destroy (coll.gameObject);
 			Scoring.instance.num_c3++;
 		}
-		if (!HealthAndPowManager.instance.dodging && !HealthAndPowManager.instance.invincible)
-        {
-			if (coll.gameObject.tag == "Enemy")
-            {
-                Destroy(coll.gameObject);
-				SoundManagement.instance.playSFX(playerHit);
+		if (!HealthAndPowManager.instance.dodging && !HealthAndPowManager.instance.invincible) {
+			if (coll.gameObject.tag == "Enemy" || coll.gameObject.tag == "spaceship") {
+				Destroy (coll.gameObject);
+				SoundManagement.instance.playSFX (playerHit);
 				HealthAndPowManager.instance.hp--;
 				if (HealthAndPowManager.instance.hp > 0) {
 					flicker ();
 				}
-				if (HealthAndPowManager.instance.hp <= 0)
-                {
+				if (HealthAndPowManager.instance.hp <= 0) {
 					if (HealthAndPowManager.instance.extraLife) {
-						HealthAndPowManager.instance.respawn();
-					} 
-					else {
-						SoundManagement.instance.playSFX(playerDead);
+						HealthAndPowManager.instance.respawn ();
+					} else {
+						SoundManagement.instance.playSFX (playerDead);
 						animator.SetTrigger ("dead");
 						if (SoundManagement.instance.effectsOn) {
 							Instantiate (deathAnim, transform.position, transform.rotation);
 						}
 						Invoke ("endGame", 1);
 					}
-                }
-            }
-        }
-		else if (coll.gameObject.tag == "Enemy" && HealthAndPowManager.instance.invincible) 
-		{
+				}
+			}
+		} else if (coll.gameObject.tag == "Enemy" && HealthAndPowManager.instance.invincible) {
 			if (SoundManagement.instance.effectsOn) {
 				Instantiate (enemyDeathAnim, coll.gameObject.transform.position, coll.gameObject.transform.rotation);
 			}
-			Destroy(coll.gameObject);
-			SoundManagement.instance.playSFX(enemyKill);
+			Destroy (coll.gameObject);
+			SoundManagement.instance.playSFX (enemyKill);
+			Scoring.instance.num_c1++;
+		} else if (coll.gameObject.tag == "spaceship" && HealthAndPowManager.instance.invincible) {
+			if (SoundManagement.instance.effectsOn) {
+				Instantiate (enemyDeathAnim, coll.gameObject.transform.position, coll.gameObject.transform.rotation);
+			}
+			HealthAndPowManager.instance.spawnLock = false;
+			Destroy (coll.gameObject);
+			SoundManagement.instance.playSFX (enemyKill);
 			Scoring.instance.num_c1++;
 		}
 	}

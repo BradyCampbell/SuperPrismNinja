@@ -67,6 +67,7 @@ public class SpaceShipMoving : MonoBehaviour
 
 
 		if (count > destory) {
+			HealthAndPowManager.instance.spawnLock = false;
 			Destroy (gameObject);
 		}
 	

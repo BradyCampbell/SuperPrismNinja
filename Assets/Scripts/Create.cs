@@ -14,6 +14,7 @@ public class Create : MonoBehaviour
 	public Transform spaceshipPoint;
 	public GameObject spaceShip;
 	private int maxRange = 100;
+	private int addedRange;
 
 	public int objMinPercent;
 	public int obj1Percent;
@@ -38,11 +39,17 @@ public class Create : MonoBehaviour
 
 	private int medTimer;
 	private int hardTimer;
+	private int expertTimer;
+	private int insaneTimer;
 	public float difficultyMedTime;
 	public float difficultyHardTime; 
+	public float difficultyExpertTime;
+	public float difficultyInsaneTime;
 
 	public float spaceShipTime;
 	private int spaceShipSpawn;
+
+	private bool decreasedSpawn = false;
 
 	float createRate = 1.5f, createRateTimer;
 	float rateIncrease = 0.1f, initialCreateDelay = 3.0f;
@@ -62,10 +69,13 @@ public class Create : MonoBehaviour
 		spaceShipSpawn = 0;
 		medTimer = 0;
 		hardTimer = 0;
+		expertTimer = 0;
+		insaneTimer = 0;
 
 		createRateTimer = createRate + initialCreateDelay;
 
 		calculateRanges ();
+		addedRange = (maxRange + 20);
 
 	}
 
@@ -110,10 +120,28 @@ public class Create : MonoBehaviour
 			hardTimer++;
 		}
 
+		if (insaneTimer >= difficultyInsaneTime) {
+			HealthAndPowManager.instance.spawnLock = false;
+		} else {
+			insaneTimer++;
+		}
+			
 		int randNum = Random.Range (0, (maxRange - 1));
 
 		if (spaceShipSpawn <= spaceShipTime) {
 			randNum = Random.Range (0, (spaceshipRange - 1));
+		} else {
+			decreasedSpawn = true;
+		}
+			
+		if (decreasedSpawn && expertTimer >= difficultyExpertTime) {
+			decreasedSpawn = false;
+		} else {
+			expertTimer++;
+		}
+			
+		if (decreasedSpawn) {
+			randNum = Random.Range (0, addedRange);
 		}
 
 		spawn (randNum);
@@ -183,9 +211,11 @@ public class Create : MonoBehaviour
 			Instantiate (obj5, this.transform.position, this.transform.rotation);
 		}
 
-		if (num >= spaceshipRange && num < maxRange) {
+		if (num >= spaceshipRange && num < maxRange && !HealthAndPowManager.instance.spawnLock) {
 
 			Instantiate (spaceShip, spaceshipPoint.transform.position, this.transform.rotation);
+
+			HealthAndPowManager.instance.spawnLock = true;
 		}
 	}
 }

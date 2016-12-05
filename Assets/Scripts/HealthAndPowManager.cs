@@ -43,6 +43,8 @@ public class HealthAndPowManager : MonoBehaviour {
 	public AudioClip gameMusic;
 	public AudioClip dodgeSound;
 
+	public bool spawnLock = false;
+
 	// Use this for initialization
 	void Start () {
 		if (instance == null)
