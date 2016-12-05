@@ -5,10 +5,12 @@ using UnityEngine.UI;
 public class NavEnd : MonoBehaviour {
 
 	public Text scoreDisplay;
+	public Text highDisplay;
 	// Use this for initialization
 	void Start () {
 		
 		scoreDisplay.text = Scoring.instance.timeScore.ToString();
+		highDisplay.text = PlayerPrefs.GetInt ("highscore").ToString();
 		Destroy (Scoring.instance);
 	}
 	

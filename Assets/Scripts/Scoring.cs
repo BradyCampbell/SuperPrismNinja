@@ -9,6 +9,7 @@ public class Scoring : MonoBehaviour {
 
 	float startTime;
 	public int timeScore;
+	public int highScore;
 	public int num_c1 = 0;
 	public int num_c2 = 0;
 	public int num_c3 = 0;
@@ -26,6 +27,8 @@ public class Scoring : MonoBehaviour {
 		DontDestroyOnLoad (gameObject);
 
 		startTime = Time.time;
+
+		highScore = PlayerPrefs.GetInt ("highscore");
 	}
 
 	// Update is called once per frame
@@ -40,5 +43,11 @@ public class Scoring : MonoBehaviour {
 	void calculateScore()
 	{
 		timeScore = timeScore + (num_c1*1)+ (num_c2*5)+ (num_c3*10);
+
+		if (timeScore > highScore)
+			highScore = timeScore;
+
+		PlayerPrefs.SetInt ("highscore", highScore);
+		PlayerPrefs.Save();
 	}
 }
