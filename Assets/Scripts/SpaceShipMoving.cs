@@ -64,12 +64,13 @@ public class SpaceShipMoving : MonoBehaviour
 			}
 		}
 
-
-
-		if (count > destory) {
-			HealthAndPowManager.instance.spawnLock = false;
-			Destroy (gameObject);
-		}
+		Invoke("destroyShip", 4);
 	
+	}
+
+	void destroyShip()
+	{
+		HealthAndPowManager.instance.spawnLock = false;
+		Destroy (gameObject);
 	}
 }

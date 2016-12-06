@@ -128,11 +128,11 @@ public class Create : MonoBehaviour
 			
 		int randNum = Random.Range (0, (maxRange - 1));
 
-		if (spaceShipSpawn <= spaceShipTime) {
-			randNum = Random.Range (0, (spaceshipRange - 1));
-		} else {
-			decreasedSpawn = true;
-		}
+		//if (spaceShipSpawn <= spaceShipTime) {
+			//randNum = Random.Range (0, (spaceshipRange - 1));
+		//} else {
+			//decreasedSpawn = true;
+		//}
 			
 		if (decreasedSpawn && expertTimer >= difficultyExpertTime) {
 			decreasedSpawn = false;
