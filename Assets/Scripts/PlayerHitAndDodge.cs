@@ -104,8 +104,11 @@ public class PlayerHitAndDodge : MonoBehaviour {
 		}
 	}
 
-	void endGame()
+	public void endGame()
 	{
+		if (HealthAndPowManager.instance.paused) {
+			HealthAndPowManager.instance.endPause ();
+		}
 		SoundManagement.instance.musicSource.Stop ();
 		Scoring.instance.dead = true;
 		Application.LoadLevel("End");

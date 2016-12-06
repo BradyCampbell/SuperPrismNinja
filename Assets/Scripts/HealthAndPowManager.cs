@@ -37,8 +37,7 @@ public class HealthAndPowManager : MonoBehaviour {
 	private GameObject dodgeText;
 	private GameObject extraLifeBar;
 	private GameObject extraDodgeBar;
-	private GameObject pauseTop;
-	private GameObject pauseBottom;
+	private GameObject pauseScreen;
 	private GameObject starfield;
 	public Text lifeCounterText;
 
@@ -80,10 +79,8 @@ public class HealthAndPowManager : MonoBehaviour {
 
 		starfield = GameObject.Find ("StarfieldBG");
 
-		pauseTop = GameObject.Find ("Paused (1)");
-		pauseTop.SetActive (false);
-		pauseBottom = GameObject.Find ("Paused");
-		pauseBottom.SetActive (false);
+		pauseScreen = GameObject.Find ("Pause");
+		pauseScreen.SetActive (false);
 
 		if (!SoundManagement.instance.effectsOn) {
 			starfield.SetActive (false);
@@ -155,23 +152,14 @@ public class HealthAndPowManager : MonoBehaviour {
 			if (!paused) {
 				paused = true;
 				Time.timeScale = 0.0f;
-				pauseTop.SetActive (true);
-				pauseBottom.SetActive (true);
+				pauseScreen.SetActive (true);
 				SoundManagement.instance.playSFX (pauseSound);
 				if (SoundManagement.instance.musicSource.isPlaying) {
 					SoundManagement.instance.musicSource.Pause();
 					pauseResume = true;
 				}
 			} else {
-				paused = false;
-				Time.timeScale = 1.0f;
-				pauseTop.SetActive (false);
-				pauseBottom.SetActive (false);
-				SoundManagement.instance.playSFX(unpauseSound);
-				if (pauseResume) {
-					SoundManagement.instance.musicSource.UnPause ();
-					pauseResume = false;
-				}
+				endPause ();
 			}
 		}
 
@@ -203,6 +191,18 @@ public class HealthAndPowManager : MonoBehaviour {
 	{
 		dodgePow = true;
 		extraDodgeBar.SetActive (true);
+	}
+
+	public void endPause()
+	{
+		paused = false;
+		Time.timeScale = 1.0f;
+		pauseScreen.SetActive (false);
+		SoundManagement.instance.playSFX(unpauseSound);
+		if (pauseResume) {
+			SoundManagement.instance.musicSource.UnPause ();
+			pauseResume = false;
+		}
 	}
 
 	void resetDodge()
