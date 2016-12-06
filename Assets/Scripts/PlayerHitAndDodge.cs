@@ -29,7 +29,11 @@ public class PlayerHitAndDodge : MonoBehaviour {
 		if (coll.gameObject.tag == "DodgePow") {
 			SoundManagement.instance.playSFX(getPowerup);
 			Destroy (coll.gameObject);
+			if (HealthAndPowManager.instance.dodgePow = true) {
+				Scoring.instance.num_c1++;
+			}
 			HealthAndPowManager.instance.getDodgePow();
+
 		}
 		if (coll.gameObject.tag == "InvinciblePow") {
 			SoundManagement.instance.playSFX(getPowerup);
